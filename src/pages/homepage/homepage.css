@@ -1,0 +1,9 @@
+.header {
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+.questionnaireBtn {
+    border: 2px black solid;
+}

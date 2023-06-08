@@ -17,7 +17,7 @@ function Homepage() {
             <div className="header">What To Do In Denver</div>
             <div className="underHeader">
                 <div style={{backgroundImage: rmnp}} className="backgroundImg">
-                    <button className="questionnaireBtn">Start the questionnaire</button>
+                    <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
                 </div>
             </div>
         </div>

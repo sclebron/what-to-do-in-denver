@@ -7,3 +7,7 @@
 .questionnaireBtn {
     border: 2px black solid;
 }
+
+.homeContainer {
+    background-color: red;
+}

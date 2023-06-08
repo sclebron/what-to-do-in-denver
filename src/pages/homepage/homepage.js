@@ -3,6 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import './homepage.css';
 import rmnp from './images/rmnp.png';
 
+const navigate = useNavigate();
+
+const navigateToQ = () => {
+    navigate('/questionnaire')
+}
+
 //function for start questionnaire button -> use button so onClick we navigate to questionnaire page
 
 function Homepage() {

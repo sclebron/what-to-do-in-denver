@@ -1,6 +1,7 @@
 import React from 'react';
 import './homepage.css';
 import rmnp from './images/rmnp.png';
+import denver from ',/images/denver.png';
 
 function Homepage() {
     return (

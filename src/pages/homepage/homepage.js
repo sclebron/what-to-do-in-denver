@@ -7,8 +7,9 @@ function Homepage() {
         <div className="homeContainer">
             <div className="header">What To Do In Denver</div>
             <div className="underHeader">
-                <img src={rmnp} alt="denver" className="backgroundImg" />
-                <button className="questionnaireBtn">Start the questionnaire</button>
+                <div style={{backgroundImage: rmnp}} className="backgroundImg">
+                    <button className="questionnaireBtn">Start the questionnaire</button>
+                </div>
             </div>
         </div>
     )

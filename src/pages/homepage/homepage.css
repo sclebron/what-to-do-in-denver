@@ -5,8 +5,8 @@
 }
 
 .backgroundImg {
-    height: 50%;
-    width: 50%;
+    margin: 30%;
+    align-items: center;
 }
 
 .questionnaireBtn {

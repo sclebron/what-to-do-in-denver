@@ -5,6 +5,13 @@ import './questionnaire.css';
 function Questionnaire() {
     const navigate = useNavigate();
 
+    const navigateToAll = () => {
+
+    }
+
+    const navigateToRandom = () => {
+        
+    }
 
     return (
         <div className="questionnaireContainer">

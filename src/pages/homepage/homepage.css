@@ -10,11 +10,12 @@
 }
 
 .backgroundImg {
-    margin: 5%;
+    margin: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90vh;
+    background-repeat: no-repeat;
 }
 
 .questionnaireBtn {

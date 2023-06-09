@@ -3,15 +3,18 @@
     background-color: white;
     border-bottom: black 4px solid;
     text-align: center;
-    height: 20vh;
+    font-size: 30px;
+    font-weight: 400;
+    height: 15vh;
 }
 
 .backgroundImg {
-    margin: 30%;
+    margin: 15%;
     align-items: center;
 }
 
 .questionnaireBtn {
     border: 3px black solid;
     border-radius: 5px;
+    padding: 10px;
 }

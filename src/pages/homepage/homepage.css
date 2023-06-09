@@ -1,7 +1,7 @@
 .header {
     color: black;
     background-color: white;
-    border-bottom: black 6px solid;
+    border-bottom: black 4px solid;
     text-align: center;
     height: 20vh;
 }
@@ -12,5 +12,6 @@
 }
 
 .questionnaireBtn {
-    border: 4px black solid;
+    border: 3px black solid;
+    border-radius: 5px;
 }

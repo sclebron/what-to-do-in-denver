@@ -9,14 +9,14 @@ const Homepage = () => {
 const navigateToQ = () => {
 
     navigate('/questionnaire')
-    
+
 }
 
     return (
         <div className="homeContainer">
             <div className="header">What To Do In Denver</div>
             <div className="underHeader">
-                <div style={{backgroundImage: rmnp}} className="backgroundImg">
+                <div style={{backgroundImage: "url(/images/rmnp.png"}} className="backgroundImg">
                     <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
                 </div>
             </div>

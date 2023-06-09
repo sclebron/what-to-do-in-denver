@@ -22,3 +22,7 @@
     border-radius: 5px;
     padding: 10px;
 }
+
+.questionnaireBtn:hover {
+    cursor: pointer;
+}

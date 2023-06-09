@@ -11,6 +11,7 @@
 .backgroundImg {
     margin: 15%;
     align-items: center;
+    height: 90vh;
 }
 
 .questionnaireBtn {

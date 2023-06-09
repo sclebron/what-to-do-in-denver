@@ -10,7 +10,7 @@
 }
 
 .backgroundImg {
-    margin: 4%;
+    margin: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,4 +27,6 @@
 
 .questionnaireBtn:hover {
     cursor: pointer;
+    background-color: black;
+    color: white;
 }

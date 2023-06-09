@@ -6,7 +6,7 @@ import rmnp from './images/rmnp.png';
 function Homepage() {
     const navigate = useNavigate();
 
-    const navigateToQ() {
+    const navigateToQ = () => {
 
     navigate('/questionnaire')
 

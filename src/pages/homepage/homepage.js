@@ -9,9 +9,8 @@ const Homepage = () => {
 const navigateToQ = () => {
 
     navigate('/questionnaire')
+    
 }
-
-//function for start questionnaire button -> use button so onClick we navigate to questionnaire page
 
     return (
         <div className="homeContainer">

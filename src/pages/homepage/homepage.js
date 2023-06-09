@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './homepage.css';
 import rmnp from './images/rmnp.png';
 
-const Homepage = () => {
+function Homepage() {
     const navigate = useNavigate();
 
 const navigateToQ = () => {

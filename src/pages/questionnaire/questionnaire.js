@@ -6,11 +6,11 @@ function Questionnaire() {
     const navigate = useNavigate();
 
     const navigateToAll = () => {
-
+        navigate('/all');
     }
 
     const navigateToRandom = () => {
-        
+        navigate('/random');
     }
 
     return (

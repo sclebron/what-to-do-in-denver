@@ -3,9 +3,10 @@
     background-color: white;
     border-bottom: black 4px solid;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
-    height: 15vh;
+    height: 12vh;
+    padding-top: 5vh;
 }
 
 .backgroundImg {

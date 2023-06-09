@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import './homepage.css';
 import rmnp from './images/rmnp.png';
 
-const navigate = useNavigate();
-
 const navigateToQ = () => {
+    const navigate = useNavigate();
+
     navigate('/questionnaire')
 }
 

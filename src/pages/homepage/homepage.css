@@ -10,7 +10,10 @@
 }
 
 .backgroundImg {
-    margin: 5vh;
+    margin-right: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;

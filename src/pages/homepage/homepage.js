@@ -26,3 +26,5 @@ function Homepage() {
 }
 
 export default Homepage;
+
+//what to include on homepage: header will have title of app, ; underHeader will have start questionnaire button,

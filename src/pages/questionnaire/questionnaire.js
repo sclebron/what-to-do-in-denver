@@ -26,7 +26,9 @@ function Questionnaire() {
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
                 {questions.map((questions) => (
-                    <div></div>
+                    <div className="question">
+                        
+                    </div>
                 ))}
             </div>
             <div className="buttons">
@@ -38,5 +40,3 @@ function Questionnaire() {
 }
 
 export default Questionnaire;
-
-//use useNavigation to create a function to redirect to new page onSubmit of button after completing questionnaire

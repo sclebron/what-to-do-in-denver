@@ -9,10 +9,6 @@
     padding-top: 5vh;
 }
 
-.underHeader {
-    
-}
-
 .backgroundImg {
     margin: auto;
     display: flex;
@@ -20,6 +16,8 @@
     justify-content: center;
     height: 72vh;
     background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5vh;
 }
 
 .questionnaireBtn {

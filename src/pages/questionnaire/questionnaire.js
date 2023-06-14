@@ -27,7 +27,7 @@ function Questionnaire() {
             <div className="questions">
                 {questions.map((questions) => (
                     <div className="question">
-                        
+                        <div>{questions.question}</div>
                     </div>
                 ))}
             </div>

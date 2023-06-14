@@ -3,6 +3,14 @@ import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
 
 function Questionnaire() {
+    const questions = [
+        {
+            question: "",
+            option1: "",
+            option2: ""
+        }
+    ]
+
     const navigate = useNavigate();
 
     const navigateToAll = () => {
@@ -16,6 +24,11 @@ function Questionnaire() {
     return (
         <div className="questionnaireContainer">
             <div className="qTitle">Questionnaire</div>
+            <div className="questions">
+                {questions.map((questions) => (
+                    
+                ))}
+            </div>
         </div>
     )
 }

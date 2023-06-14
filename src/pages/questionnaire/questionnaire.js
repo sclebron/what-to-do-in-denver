@@ -15,7 +15,7 @@ function Questionnaire() {
 
     return (
         <div className="questionnaireContainer">
-            
+            <div className="qTitle">Questionnaire</div>
         </div>
     )
 }

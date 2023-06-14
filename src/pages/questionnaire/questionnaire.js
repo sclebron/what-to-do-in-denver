@@ -29,6 +29,10 @@ function Questionnaire() {
                     <div></div>
                 ))}
             </div>
+            <div className="buttons">
+                    <button onSubmit={navigateToAll} className="allBtn">All Activities</button>
+                    <button onSubmit={navigateToRandom} className="randomBtn">Random Activity</button>
+            </div>
         </div>
     )
 }

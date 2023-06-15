@@ -5,11 +5,32 @@ import './questionnaire.css';
 function Questionnaire() {
     const questions = [
         {
-            question: "",
-            option1: "",
-            option2: "",
+            question: "How long would you like the activity to take?",
+            option1: "Half day",
+            option2: "Full day",
+            option3: "Overnight",
+            option4: ""
+        },
+        {
+            question: "How far from Denver would you like to travel?",
+            option1: "Within the city",
+            option2: "1 hour",
+            option3: "Few hours",
+            option4: ""
+        },
+        {
+            question: "Would you like to do an indoor or outdoor activity?",
+            option1: "Indoor",
+            option2: "Outdoor",
             option3: "",
             option4: ""
+        },
+        {
+            question: "In what seasonw will you be doing the activity?",
+            option1: "Winter",
+            option2: "Spring",
+            option: "Summer",
+            option4: "Fall"
         }
     ]
 

@@ -52,10 +52,10 @@ function Questionnaire() {
                     <div className="question">
                         <div>{questions.question}</div>
                         <select>
-                            <option value={questions.option1}>{questions.option1}</option>
-                            <option value={questions.option2}>{questions.option2}</option>
-                            <option value={questions.option3}>{questions.option3}</option>
-                            <option value={questions.option4}>{questions.option4}</option>
+                            <option value={questions.option1}>1. {questions.option1}</option>
+                            <option value={questions.option2}>2. {questions.option2}</option>
+                            <option value={questions.option3}>3. {questions.option3}</option>
+                            <option value={questions.option4}>4. {questions.option4}</option>
                         </select>
                     </div>
                 ))}

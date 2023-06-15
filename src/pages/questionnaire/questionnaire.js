@@ -7,7 +7,9 @@ function Questionnaire() {
         {
             question: "",
             option1: "",
-            option2: ""
+            option2: "",
+            option3: "",
+            option4: ""
         }
     ]
 
@@ -29,9 +31,10 @@ function Questionnaire() {
                     <div className="question">
                         <div>{questions.question}</div>
                         <select>
-                            <option></option>
-                            <option></option>
-                            <option></option>
+                            <option value={questions.option1}>{questions.option1}</option>
+                            <option value={questions.option2}>{questions.option2}</option>
+                            <option value={questions.option3}>{questions.option3}</option>
+                            <option value={questions.option4}>{questions.option4}</option>
                         </select>
                     </div>
                 ))}

@@ -28,6 +28,11 @@ function Questionnaire() {
                 {questions.map((questions) => (
                     <div className="question">
                         <div>{questions.question}</div>
+                        <select>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
                     </div>
                 ))}
             </div>

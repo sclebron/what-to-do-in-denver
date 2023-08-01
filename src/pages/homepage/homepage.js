@@ -13,13 +13,19 @@ function Homepage() {
 }
 
     return (
+        // <div className="homeContainer">
+        //     <div className="header">What To Do In Denver</div>
+        //     <div className="underHeader">
+        //         <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
+        //             <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
+        //         </div>
+        //     </div>
+        // </div>
         <div className="homeContainer">
-            <div className="header">What To Do In Denver</div>
-            <div className="underHeader">
                 <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
+                    <div className="header">What To Do In Denver</div>
                     <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
                 </div>
-            </div>
         </div>
     )
 

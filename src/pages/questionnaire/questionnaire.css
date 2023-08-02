@@ -1,3 +1,7 @@
+.questionnaireContainer {
+    float: left;
+}
+
 .qTitle {
     font-size: 40px;
 }

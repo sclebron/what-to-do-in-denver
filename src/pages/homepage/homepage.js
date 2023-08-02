@@ -13,12 +13,10 @@ function Homepage() {
 }
 
     return (
-        <div className="homeContainer">
                 <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
-                    <text className="header">What To Do In Denver</text>
+                    <div className="header">What To Do In Denver</div>
                     <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
                 </div>
-        </div>
     )
 
 }

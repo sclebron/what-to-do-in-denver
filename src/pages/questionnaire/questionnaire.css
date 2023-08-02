@@ -1,9 +1,11 @@
 .questionnaireContainer {
     float: left;
+    margin-left: 5vh;
 }
 
 .qTitle {
     font-size: 40px;
+    margin-left: -20vh;
 }
 
 .question {

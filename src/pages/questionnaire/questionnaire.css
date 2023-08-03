@@ -1,6 +1,12 @@
 .questionnaireContainer {
     float: left;
-    margin-left: 5vh;
+    margin-top: 2vh;
+    margin-left: 4vh;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+    border: solid red 7px;
 }
 
 .qTitle {

@@ -6,18 +6,21 @@
 .qTitle {
     font-size: 40px;
     margin-left: -20vh;
+    margin-bottom: 2vh;
 }
 
 .question {
     font-weight: 400;
+    margin-bottom: 2vh;
 }
 
 .allBtn {
     font-size: 20px;
-    margin-top: 5vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
 }
 
 .randomBtn {
     font-size: 20px;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }

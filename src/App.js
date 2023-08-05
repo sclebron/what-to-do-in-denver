@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import rmnp from './images/rmnp.png';
 import Homepage from './pages/homepage/homepage.js';
 import Questionnaire from './pages/questionnaire/questionnaire.js';
 import All from './pages/all/all.js';
@@ -9,14 +10,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path='/' element={<Homepage/>}/>
-          <Route path='/questionnaire' element={<Questionnaire/>}/>
-          <Route path='/all' element={<All/>}/>
-          <Route path='/random' element={<Random/>}/>
-        </Routes>
-      </Router>
+      <div className="App" style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
+        <Router>
+          <Routes>
+            <Route path='/' element={<Homepage/>}/>
+            <Route path='/questionnaire' element={<Questionnaire/>}/>
+            <Route path='/all' element={<All/>}/>
+            <Route path='/random' element={<Random/>}/>
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }

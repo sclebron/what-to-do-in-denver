@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './homepage.css';
-import rmnp from './images/rmnp.png';
+// import rmnp from './images/rmnp.png';
 
 function Homepage() {
     const navigate = useNavigate();
@@ -13,7 +13,7 @@ function Homepage() {
 }
 
     return (
-                <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
+                <div className="backgroundImg">
                     <div className="header">What To Do In Denver</div>
                     <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
                 </div>

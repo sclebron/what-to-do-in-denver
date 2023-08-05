@@ -45,6 +45,7 @@ function Questionnaire() {
     }
 
     return (
+        <div className="questionnaire">
         <div className="questionnaireContainer">
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
@@ -64,6 +65,7 @@ function Questionnaire() {
                     <button onSubmit={navigateToAll} className="allBtn">All Activities</button>
                     <button onSubmit={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
+        </div>
         </div>
     )
 }

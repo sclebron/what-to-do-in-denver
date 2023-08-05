@@ -1,12 +1,23 @@
+.questionnaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .questionnaireContainer {
-    float: left;
+    /* float: left;
     margin-top: 2vh;
-    margin-left: 4vh;
+    margin-left: 4vh; */
+    width: 365px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     padding-top: 3vh;
     padding-left: 5vh;
     padding-right: 5vh;
     padding-bottom: 5vh;
-    border: solid 7px #B5C99A;
+    border: solid 7px black;
+    background-color: white;
 }
 
 .qTitle {

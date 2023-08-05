@@ -13,7 +13,7 @@ function Homepage() {
 }
 
     return (
-                <div className="backgroundImg">
+                <div className="home">
                     <div className="header">What To Do In Denver</div>
                     <button onClick={navigateToQ} className="questionnaireBtn">Start the questionnaire</button>
                 </div>

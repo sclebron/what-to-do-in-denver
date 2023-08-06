@@ -29,9 +29,25 @@
     font-size: 20px;
     margin-top: 2vh;
     margin-right: 2vh;
+    border: solid 3px black;
+    background-color: white;
 }
 
 .randomBtn {
     font-size: 20px;
     margin-top: 2vh;
+    border: solid 3px black;
+    background-color: white;
+}
+
+.allBtn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.randomBtn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
 }

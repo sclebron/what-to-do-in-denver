@@ -65,29 +65,44 @@ function Questionnaire() {
     };
 
     return (
-        <div className="questionnaire">
-        <div className="questionnaireContainer">
-            <div className="qTitle">Questionnaire</div>
-            <div className="questions">
-                {questions.map((questions) => (
-                    <div className="question">
-                        <div>{questions.question}</div>
-                        <select>
-                            <option value={questions.option1}>{questions.option1}</option>
-                            <option value={questions.option2}>{questions.option2}</option>
-                            <option value={questions.option3}>{questions.option3}</option>
-                            <option value={questions.option4}>{questions.option4}</option>
-                        </select>
-                    </div>
-                ))}
-            </div>
-            <div className="buttons">
-                    <button onSubmit={navigateToAll} className="allBtn">All Activities</button>
-                    <button onSubmit={navigateToRandom} className="randomBtn">Random Activity</button>
-            </div>
-        </div>
+        <div>
+            <h2>Select Options using Checkboxes</h2>
+            {options.map((option) => (
+                <label key={option.id}>
+                    <input 
+                        type="checkbox"
+                        checked={selectedOPtions.includes(option.id)}
+                        onChange={() => handleCheckboxChange(option.id)}
+                    />
+                </label>
+            ))}
         </div>
     )
+
+    // return (
+    //     <div className="questionnaire">
+    //     <div className="questionnaireContainer">
+    //         <div className="qTitle">Questionnaire</div>
+    //         <div className="questions">
+    //             {questions.map((questions) => (
+    //                 <div className="question">
+    //                     <div>{questions.question}</div>
+    //                     <select>
+    //                         <option value={questions.option1}>{questions.option1}</option>
+    //                         <option value={questions.option2}>{questions.option2}</option>
+    //                         <option value={questions.option3}>{questions.option3}</option>
+    //                         <option value={questions.option4}>{questions.option4}</option>
+    //                     </select>
+    //                 </div>
+    //             ))}
+    //         </div>
+    //         <div className="buttons">
+    //                 <button onSubmit={navigateToAll} className="allBtn">All Activities</button>
+    //                 <button onSubmit={navigateToRandom} className="randomBtn">Random Activity</button>
+    //         </div>
+    //     </div>
+    //     </div>
+    // )
 }
 
 export default Questionnaire;

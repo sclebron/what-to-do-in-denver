@@ -23,6 +23,7 @@
 .question {
     font-weight: 400;
     margin-bottom: 2vh;
+    float: left;
 }
 
 .allBtn {

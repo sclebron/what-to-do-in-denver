@@ -74,10 +74,19 @@ function Questionnaire() {
                         checked={selectedOPtions.includes(option.id)}
                         onChange={() => handleCheckboxChange(option.id)}
                     />
+                    {option.label}
                 </label>
             ))}
+            <div>
+                <h3>Selected Options:</h3>
+                <ul>
+                    {selectedOptions.map((selectedId) => (
+                        <li key={selectedId}>{options.find((option) => option.id === selectedId)?.label}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
-    )
+    );
 
     // return (
     //     <div className="questionnaire">

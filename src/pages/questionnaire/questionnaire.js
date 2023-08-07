@@ -63,6 +63,22 @@ function Questionnaire() {
         });
     };
 
+    // return (
+    //     <div>
+    //       <h2>Select Options using Checkboxes</h2>
+    //       {options.map((option) => (
+    //         <label key={option.id}>
+    //           <input
+    //             type="checkbox"
+    //             checked={selectedOptions.includes(option.id)}
+    //             onChange={() => handleCheckboxChange(option.id)}
+    //           />
+    //           {option.label}
+    //         </label>
+    //       ))}
+    //       </div>
+    // )
+
     return (
         <div className="questionnaire">
         <div className="questionnaireContainer">
@@ -71,12 +87,21 @@ function Questionnaire() {
                 {questions.map((questions) => (
                     <div className="question">
                         <div>{questions.question}</div>
-                        <select>
+                        {/* <select>
                             <option value={questions.option1}>{questions.option1}</option>
                             <option value={questions.option2}>{questions.option2}</option>
                             <option value={questions.option3}>{questions.option3}</option>
                             <option value={questions.option4}>{questions.option4}</option>
-                        </select>
+                        </select> */}
+                        {options.map((option) => (
+                            <label key={option.id}>
+                                <input
+                                    type="checkbox"
+                                    checked={selectedOptions.includes(option.id)}
+                                    onChange={() => handleCheckboxChange(option.id)}
+                                />
+                                {option.label}
+                                </label>
                     </div>
                 ))}
             </div>

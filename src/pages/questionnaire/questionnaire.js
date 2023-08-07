@@ -48,6 +48,14 @@ function Questionnaire() {
         const [selectedOptions, setSelectedOptions] = useState([]);
     }
 
+    const options = [
+        { id: 1, labe: 'Option 1' },
+        { id: 2, label: 'Option 2' },
+        { id: 3, label: 'Option 3' },
+    ];
+
+    
+
     return (
         <div className="questionnaire">
         <div className="questionnaireContainer">

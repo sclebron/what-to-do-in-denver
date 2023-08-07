@@ -54,7 +54,15 @@ function Questionnaire() {
         { id: 3, label: 'Option 3' },
     ];
 
-    
+    const handleCheckboxChange = (optionId) => {
+        setSelectedOptions((prevSelectedOptions) => {
+            if (prevSelectedOptions.includes(optionId)) {
+                return prevSelectedOptions.filter((id) => id !==optionId);
+            } else {
+                return [...prevSelectedOptions, optionId];
+            }
+        });
+    };
 
     return (
         <div className="questionnaire">

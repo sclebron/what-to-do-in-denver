@@ -93,15 +93,6 @@ function Questionnaire() {
                             <option value={questions.option3}>{questions.option3}</option>
                             <option value={questions.option4}>{questions.option4}</option>
                         </select> */}
-                        {options.map((option) => (
-                            <label key={option.id}>
-                                <input
-                                    type="checkbox"
-                                    checked={selectedOptions.includes(option.id)}
-                                    onChange={() => handleCheckboxChange(option.id)}
-                                />
-                                {option.label}
-                                </label>
                     </div>
                 ))}
             </div>

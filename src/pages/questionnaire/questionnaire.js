@@ -44,24 +44,24 @@ function Questionnaire() {
         navigate('/random');
     }
 
-    const CheckboxOptions = () => {
-        const [selectedOptions, setSelectedOptions] = useState([]);
+    // const CheckboxOptions = () => {
+    //     const [selectedOptions, setSelectedOptions] = useState([]);
 
-    const options = [
-        { id: 1, label: 'Option 1' },
-        { id: 2, label: 'Option 2' },
-        { id: 3, label: 'Option 3' },
-    ];
+    // const options = [
+    //     { id: 1, label: 'Option 1' },
+    //     { id: 2, label: 'Option 2' },
+    //     { id: 3, label: 'Option 3' },
+    // ];
 
-    const handleCheckboxChange = (optionId) => {
-        setSelectedOptions((prevSelectedOptions) => {
-            if (prevSelectedOptions.includes(optionId)) {
-                return prevSelectedOptions.filter((id) => id !==optionId);
-            } else {
-                return [...prevSelectedOptions, optionId];
-            }
-        });
-    };
+    // const handleCheckboxChange = (optionId) => {
+    //     setSelectedOptions((prevSelectedOptions) => {
+    //         if (prevSelectedOptions.includes(optionId)) {
+    //             return prevSelectedOptions.filter((id) => id !==optionId);
+    //         } else {
+    //             return [...prevSelectedOptions, optionId];
+    //         }
+    //     });
+    // };
 
     // return (
     //     <div>
@@ -77,6 +77,15 @@ function Questionnaire() {
     //         </label>
     //       ))}
     //       </div>
+
+        //       <label key={option.id}>
+    //           <input
+    //             type="checkbox"
+    //             checked={selectedOptions.includes(option.id)}
+    //             onChange={() => handleCheckboxChange(option.id)}
+    //           />
+    //           {option.label}
+    //         </label>
     // )
 
     return (
@@ -87,23 +96,22 @@ function Questionnaire() {
                 {questions.map((questions) => (
                     <div className="question">
                         <div>{questions.question}</div>
-                        {/* <select>
+                        <select>
                             <option value={questions.option1}>{questions.option1}</option>
                             <option value={questions.option2}>{questions.option2}</option>
                             <option value={questions.option3}>{questions.option3}</option>
                             <option value={questions.option4}>{questions.option4}</option>
-                        </select> */}
+                        </select>
                     </div>
                 ))}
             </div>
             <div className="buttons">
-                    <button onSubmit={navigateToAll} className="allBtn">All Activities</button>
-                    <button onSubmit={navigateToRandom} className="randomBtn">Random Activity</button>
+                    <button onClick={navigateToAll} className="allBtn">All Activities</button>
+                    <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
         </div>
     )
-}
 }
 
 export default Questionnaire;

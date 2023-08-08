@@ -6,31 +6,35 @@ function Questionnaire() {
     const questions = [
         {
             question: "How long would you like the activity to take?",
-            option1: "Half day",
-            option2: "Full day",
-            option3: "Overnight",
-            option4: ""
+            options: [
+                { id: 1, text: "Half day" },
+                { id: 2, text: "Full day" },
+                { id: 3, text: "Overnight" },
+            ],
         },
         {
             question: "How far from Denver would you like to travel?",
-            option1: "Within the city",
-            option2: "1 hour",
-            option3: "Few hours",
-            option4: ""
+            options: [
+                { id: 4, text: "Within the city" },
+                { id: 5, text: "1 hour" },
+                { id: 6, text: "Few hours" },
+            ],
         },
         {
             question: "Would you like to do an indoor or outdoor activity?",
-            option1: "Indoor",
-            option2: "Outdoor",
-            option3: "",
-            option4: ""
+            options: [
+                { id: 7, text: "Indoor" },
+                { id: 8, text: "Outdoor" },
+            ],
         },
         {
             question: "In what seasonw will you be doing the activity?",
-            option1: "Winter",
-            option2: "Spring",
-            option: "Summer",
-            option4: "Fall"
+            options: [
+                { id: 9, text: "Winter" },
+                { id: 10, text: "Spring" },
+                { id: 11, text: "Summer" },
+                { id: 12, text: "Fall" },
+            ],
         }
     ]
 

@@ -28,10 +28,17 @@
 
 .questionOnly {
     margin-bottom: 1.5vh;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .options {
     margin-bottom: 3vh;
+}
+
+.selectBox:checked {
+    appearance: none;
+    background-color: black;
 }
 
 .allBtn {

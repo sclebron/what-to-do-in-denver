@@ -116,6 +116,7 @@ function Questionnaire() {
                         <label key={option.id} className="options">
                             <input 
                                 type="checkbox"
+                                className="selectbox"
                                 checked={selectedOptions.includes(option.id)}
                                 onChange={() => handleCheckboxChange(option.id)}
                             />

@@ -26,6 +26,14 @@
     float: left;
 }
 
+.questionOnly {
+    margin-bottom: 1.5vh;
+}
+
+.options {
+    margin-bottom: 3vh;
+}
+
 .allBtn {
     font-size: 20px;
     margin-top: 2vh;

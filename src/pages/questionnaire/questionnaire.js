@@ -111,9 +111,9 @@ function Questionnaire() {
             <div className="questions">
                 {questions.map((questions) => (
                     <div className="question">
-                        <div>{questions.question}</div>
+                        <div className="questionOnly">{questions.question}</div>
                         {questions.options.map((option) => (
-                        <label key={option.id}>
+                        <label key={option.id} className="options">
                             <input 
                                 type="checkbox"
                                 checked={selectedOptions.includes(option.id)}

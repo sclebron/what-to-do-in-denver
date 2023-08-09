@@ -3,40 +3,52 @@ import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
 
 function Questionnaire() {
+    const [selectedOptions, setSelectedOptions] = useState([]);
+
     const questions = [
         {
             question: "How long would you like the activity to take?",
             options: [
-                { id: 1, text: "Half day" },
-                { id: 2, text: "Full day" },
-                { id: 3, text: "Overnight" },
+                { id: 1, label: "Half day" },
+                { id: 2, label: "Full day" },
+                { id: 3, label: "Overnight" },
             ],
         },
         {
             question: "How far from Denver would you like to travel?",
             options: [
-                { id: 4, text: "Within the city" },
-                { id: 5, text: "1 hour" },
-                { id: 6, text: "Few hours" },
+                { id: 4, label: "Within the city" },
+                { id: 5, label: "1 hour" },
+                { id: 6, label: "Few hours" },
             ],
         },
         {
             question: "Would you like to do an indoor or outdoor activity?",
             options: [
-                { id: 7, text: "Indoor" },
-                { id: 8, text: "Outdoor" },
+                { id: 7, label: "Indoor" },
+                { id: 8, label: "Outdoor" },
             ],
         },
         {
-            question: "In what seasonw will you be doing the activity?",
+            question: "In what season will you be doing the activity?",
             options: [
-                { id: 9, text: "Winter" },
-                { id: 10, text: "Spring" },
-                { id: 11, text: "Summer" },
-                { id: 12, text: "Fall" },
+                { id: 9, label: "Winter" },
+                { id: 10, label: "Spring" },
+                { id: 11, label: "Summer" },
+                { id: 12, label: "Fall" },
             ],
         }
     ]
+
+        const handleCheckboxChange = (optionId) => {
+        setSelectedOptions((prevSelectedOptions) => {
+            if (prevSelectedOptions.includes(optionId)) {
+                return prevSelectedOptions.filter((id) => id !==optionId);
+            } else {
+                return [...prevSelectedOptions, optionId];
+            }
+        });
+    };
 
     const navigate = useNavigate();
 
@@ -100,12 +112,22 @@ function Questionnaire() {
                 {questions.map((questions) => (
                     <div className="question">
                         <div>{questions.question}</div>
-                        <select>
+                        {/* <select>
                             <option value={questions.option1}>{questions.option1}</option>
                             <option value={questions.option2}>{questions.option2}</option>
                             <option value={questions.option3}>{questions.option3}</option>
                             <option value={questions.option4}>{questions.option4}</option>
-                        </select>
+                        </select> */}
+                        {questions.options.map((option) => (
+                        <label key={questions.options.id}>
+                            <input 
+                                type="checkbox"
+                                checked={selectedOptions.includes(questions.options.id)}
+                                onChange={() => handleCheckboxChange(questions.options.id)}
+                            />
+                            {questions.options.label}
+                        </label>
+                        ))}
                     </div>
                 ))}
             </div>

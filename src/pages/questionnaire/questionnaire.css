@@ -4,7 +4,7 @@
 }
 
 .questionnaireContainer {
-    margin-top: 15vh;
+    margin-top: 10vh;
     width: 365px;
     padding-top: 3vh;
     padding-left: 5vh;
@@ -28,12 +28,10 @@
 
 .questionOnly {
     margin-bottom: 1.5vh;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .options {
-    margin-bottom: 3vh;
+    display: flex;
 }
 
 .selectBox:checked {

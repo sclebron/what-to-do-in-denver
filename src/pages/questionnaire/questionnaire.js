@@ -60,50 +60,6 @@ function Questionnaire() {
         navigate('/random');
     }
 
-    // const CheckboxOptions = () => {
-    //     const [selectedOptions, setSelectedOptions] = useState([]);
-
-    // const options = [
-    //     { id: 1, label: 'Option 1' },
-    //     { id: 2, label: 'Option 2' },
-    //     { id: 3, label: 'Option 3' },
-    // ];
-
-    // const handleCheckboxChange = (optionId) => {
-    //     setSelectedOptions((prevSelectedOptions) => {
-    //         if (prevSelectedOptions.includes(optionId)) {
-    //             return prevSelectedOptions.filter((id) => id !==optionId);
-    //         } else {
-    //             return [...prevSelectedOptions, optionId];
-    //         }
-    //     });
-    // };
-
-    // return (
-    //     <div>
-    //       <h2>Select Options using Checkboxes</h2>
-    //       {options.map((option) => (
-    //         <label key={option.id}>
-    //           <input
-    //             type="checkbox"
-    //             checked={selectedOptions.includes(option.id)}
-    //             onChange={() => handleCheckboxChange(option.id)}
-    //           />
-    //           {option.label}
-    //         </label>
-    //       ))}
-    //       </div>
-
-        //       <label key={option.id}>
-    //           <input
-    //             type="checkbox"
-    //             checked={selectedOptions.includes(option.id)}
-    //             onChange={() => handleCheckboxChange(option.id)}
-    //           />
-    //           {option.label}
-    //         </label>
-    // )
-
     return (
         <div className="questionnaire">
         <div className="questionnaireContainer">

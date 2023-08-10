@@ -4,7 +4,7 @@
 }
 
 .questionnaireContainer {
-    margin-top: 10vh;
+    margin-top: 8vh;
     width: 365px;
     padding-top: 3vh;
     padding-left: 5vh;
@@ -34,8 +34,11 @@
     display: flex;
 }
 
-.selectBox:checked {
-    appearance: none;
+.selectbox:hover {
+    cursor: pointer;
+}
+
+.selectbox:checked {
     background-color: black;
 }
 

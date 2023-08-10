@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="App" style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
+      <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
         <Router>
           <Routes>
             <Route path='/' element={<Homepage/>}/>

@@ -38,8 +38,8 @@
     cursor: pointer;
 }
 
-.selectbox:checked::before {
-    background-color: black;
+.selectbox:checked {
+    accent-color: black;
 }
 
 .allBtn {

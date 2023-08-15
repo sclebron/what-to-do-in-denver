@@ -50,6 +50,15 @@ function Questionnaire() {
         });
     };
 
+    const filterArray = () => {
+        return DataTransfer.filter(item => {
+            const userSelectedCategory = selectedOPtions.category;
+            if (userSelectedCategory && item.category !== userSelectedCategory) {
+                return false;
+            }
+        })
+    }
+
     const navigate = useNavigate();
 
     const navigateToAll = () => {

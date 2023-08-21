@@ -24,8 +24,10 @@ function Random() {
                 <>
                 <div className="randomTitle">{random.title}</div>
                 <img className="randomImg" src={random.image} alt="Random activity" />
-                <div className="randomDescription">{random.description}</div>
-                <div className="randomWebUrl">{random.webUrl}</div>
+                <div className="randomActivity">
+                    <div className="randomDescription">{random.description}</div>
+                    <a className="randomWebUrl" href={random.webUrl} target="blank">Visit Website</a>
+                </div>
                 </>
             ))}
         </div>

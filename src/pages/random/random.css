@@ -4,7 +4,7 @@
 }
 
 .randomContainer {
-    margin-top: 8vh;
+    margin-top: 6vh;
     width: 365px;
     padding-top: 3vh;
     padding-left: 5vh;
@@ -16,11 +16,16 @@
 
 .randomTitle {
     font-size: 40px;
-    margin-left: -20vh;
     margin-bottom: 2vh;
 }
 
 .randomImg {
     height: 40vh;
     width: 50vh;
+    margin-bottom: 2vh;
+}
+
+.randomActivity {
+    border: solid 4px black;
+    padding: 1vh;
 }

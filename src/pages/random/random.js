@@ -18,8 +18,10 @@ function Random() {
     ]
 
     return (
+        <div className="random">
         <div className="randomContainer">
             <div className="randomTitle">{random.title}</div>
+        </div>
         </div>
     )
 }

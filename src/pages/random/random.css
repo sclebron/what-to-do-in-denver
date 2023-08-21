@@ -1,4 +1,21 @@
+.random {
+    display: flex;
+    justify-content: center;
+}
+
 .randomContainer {
+    margin-top: 8vh;
+    width: 365px;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
     border: solid 7px black;
     background-color: white;
+}
+
+.randomTitle {
+    font-size: 40px;
+    margin-left: -20vh;
+    margin-bottom: 2vh;
 }

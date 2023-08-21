@@ -20,16 +20,14 @@ function Random() {
     return (
         <div className="random">
         <div className="randomContainer">
-            <div className="randomTitle">{random.title}</div>
-            <div className="randomActivity">
             {random.map((random) => (
                 <>
+                <div className="randomTitle">{random.title}</div>
                 <img className="randomImg" src={random.image} alt="Random activity" />
                 <div className="randomDescription">{random.description}</div>
                 <div className="randomWebUrl">{random.webUrl}</div>
                 </>
             ))}
-            </div>
         </div>
         </div>
     )

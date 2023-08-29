@@ -29,3 +29,12 @@
     border: solid 4px black;
     padding: 1vh;
 }
+
+.randomWebUrl {
+    color: black;
+    text-decoration: none;
+}
+
+.randomWebUrl:hover {
+    text-decoration: underline;
+}

@@ -5,8 +5,10 @@ import './all.css';
 
 function All() {
     return (
+        <div className="all">
         <div className="allContainer">
             
+        </div>
         </div>
     )
 }

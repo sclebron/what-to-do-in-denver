@@ -23,11 +23,11 @@ function All() {
         <div className="allContainer">
         {all.map((all) => (
                 <>
-                <div className="randomTitle">{all.title}</div>
-                <img className="randomImg" src={all.image} alt="Random activity" />
-                <div className="randomActivity">
-                    <div className="randomDescription">{all.description}</div>
-                    <a className="randomWebUrl" href={all.webUrl} target="blank">Visit Website</a>
+                <div className="allTitle">{all.title}</div>
+                <img className="allImg" src={all.image} alt="All activity" />
+                <div className="allActivity">
+                    <div className="allDescription">{all.description}</div>
+                    <a className="allWebUrl" href={all.webUrl} target="blank">Visit Website</a>
                 </div>
                 </>
             ))}

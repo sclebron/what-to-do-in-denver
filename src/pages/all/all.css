@@ -1,0 +1,42 @@
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+.allContainer {
+    margin-top: 6vh;
+    width: 365px;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 5vh;
+    border: solid 7px black;
+    background-color: white;
+}
+
+.allTitle {
+    font-size: 40px;
+    margin-bottom: 2vh;
+}
+
+.allImg {
+    height: 40vh;
+    width: 50vh;
+    margin-bottom: 2vh;
+}
+
+.allActivity {
+    border: solid 4px black;
+    padding: 1vh;
+}
+
+.allWebUrl {
+    color: black;
+    text-decoration: none;
+}
+
+.allWebUrl:hover {
+    text-decoration: underline;
+}
+
+/* add overflow will scroll  */

@@ -12,6 +12,17 @@ const all = [
         "distance": "1hr",
         "place": "Outdoors",
         "season": "Winter"
+    },
+    {
+        "title": "Visit Denver Museum of Nature & Science",
+        "image": "https://media2.westword.com/den/imager/u/slideshow/10120352/dmnsdino.jpg",
+        "description": "Learn about everything from dinosaurs to astronomy at the Denver Museum of Nature & Science!",
+        "details": "The Denver Museum of Nature & Science is located in City Park, near the Denve Zoo. Tickets can be purchased online prior to visiting the museum.",
+        "webUrl": "https://www.dmns.org/",
+        "length": "Half day",
+        "distance": "Within the city",
+        "place": "Indoors",
+        "season": "Winter, Spring, Summer, Fall"
     }
 ]
 

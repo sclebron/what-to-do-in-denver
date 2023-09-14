@@ -12,6 +12,7 @@
     padding-bottom: 5vh;
     border: solid 7px black;
     background-color: white;
+    overflow: scroll;
 }
 
 .allTitle {
@@ -27,16 +28,21 @@
 
 .allActivity {
     border: solid 4px black;
-    padding: 1vh;
+    padding: 2.5vh;
+}
+
+.allDescription {
+    margin-bottom: 2vh;
 }
 
 .allWebUrl {
     color: black;
     text-decoration: none;
+    border: solid 3px black;
+    padding: 4px;
 }
 
 .allWebUrl:hover {
-    text-decoration: underline;
+    background-color: black;
+    color: white;
 }
-
-/* add overflow will scroll  */

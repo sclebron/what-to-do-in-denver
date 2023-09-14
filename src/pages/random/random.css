@@ -27,14 +27,21 @@
 
 .randomActivity {
     border: solid 4px black;
-    padding: 1vh;
+    padding: 2.5vh;
+}
+
+.randomDescription {
+    margin-bottom: 2vh;
 }
 
 .randomWebUrl {
     color: black;
     text-decoration: none;
+    border: solid 3px black;
+    padding: 4px;
 }
 
 .randomWebUrl:hover {
-    text-decoration: underline;
+    background-color: black;
+    color: white;
 }

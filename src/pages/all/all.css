@@ -12,6 +12,7 @@
     padding-bottom: 5vh;
     border: solid 7px black;
     background-color: white;
+    height: 570px;
     overflow: scroll;
 }
 
@@ -29,6 +30,7 @@
 .allActivity {
     border: solid 4px black;
     padding: 2.5vh;
+    margin-bottom: 5vh;
 }
 
 .allDescription {

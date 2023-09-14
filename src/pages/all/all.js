@@ -26,6 +26,14 @@ const all = [
     }
 ]
 
+
+// const allActivities = [];
+
+//if the activity is true for that specific selection then push it to the allActivities array
+//if user selection for that thing (e.g. "half day") is true && that element is true for a specific activity, then push that activity to a new array
+
+const allActivities = all.filter()
+
 //have json of activities here -> if activity has thing that was selected included then add it to empty array(?) of activities that will be displayed
 
 function All() {

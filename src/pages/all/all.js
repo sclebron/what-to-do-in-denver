@@ -11,7 +11,8 @@ const all = [
         "length": "Half day, full day, overnight",
         "distance": "1hr",
         "place": "Outdoors",
-        "season": "Winter"
+        "season": "Winter",
+        "halfDay": true
     },
     {
         "title": "Visit Denver Museum of Nature & Science",
@@ -22,19 +23,60 @@ const all = [
         "length": "Half day",
         "distance": "Within the city",
         "place": "Indoors",
-        "season": "Winter, Spring, Summer, Fall"
-    }
+        "season": "Winter, Spring, Summer, Fall",
+        "halfday": true
+    },
+    {
+        "title": "Go to a Rockies Game at Coors Field",
+        "image": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/denver/Colorado-Rockies_7C649933-EFF0-51B0-9A02E85385D86848_7c6e2c50-dc33-ec19-aec679274174a195.jpg",
+        "description": "Watch the Rockies play at the iconic Coors Field. There are lots of bars and restaurants nearby to visit before or after the game!",
+        "details": "Tickets can be purchased ahead of time online, or at Coors Field. Coors Field is 2 blocks away from Union Station, so the light rail or train into Union Station is a good transportation option to get to Coors Field.",
+        "webUrl": "https://www.mlb.com/rockies/ballpark",
+        "length": "Half day",
+        "distance": "Within the city",
+        "place": "Outdoors",
+        "season": "Spring, Summer",
+        "halfDay": true
+    },
+    {
+        "title": "Ski at Steamboat Ski Resort",
+        "image": "https://www.steamboat-springs.com/assets/page_headers/Steamboat_Ski_Resort.jpg",
+        "description": "Ski during the day or night at Steamboat Ski Resort!",
+        "details": "Steamboat Springs is located about 150 miles form Denver. Steamboat is on the Ikon Pass, although the base pass only allows limited days at Steamboat. Lift tickets can be purchased ahead of time online, or at the resort.",
+        "webUrl": "https://www.steamboat.com/",
+        "length": "Full day, overnight",
+        "distance": "Few hours",
+        "place": "Outdoors",
+        "season": "Winter",
+        "halfDay": false
+    },
 ]
 
-
-// const allActivities = [];
-
 //if the activity is true for that specific selection then push it to the allActivities array
+
+const allActivities = [];
+
+if (Option.id === checked) {
+all.map((all) => {
+    if (all.halfDay === true) {
+        allActivities.push();
+    }
+    return allActivities;
+})
+}
+
+console.log(allActivities);
+
 //if user selection for that thing (e.g. "half day") is true && that element is true for a specific activity, then push that activity to a new array
 
-const allActivities = all.filter()
+all.map((all) => {
+    if(Option.id === checked && all.halfDay === true) {
+        allActivities.push();
+    }
+    return allActivities;
+})
 
-//have json of activities here -> if activity has thing that was selected included then add it to empty array(?) of activities that will be displayed
+console.log(allActivities);
 
 function All() {
     return (

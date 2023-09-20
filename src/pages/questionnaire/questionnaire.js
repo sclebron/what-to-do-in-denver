@@ -113,7 +113,9 @@ function Questionnaire() {
 
     //if the activity is true for that specific selection then push it to the allActivities array
 
-    checked = selectedOptions.includes(option.id);
+    questions.options.map((option) => {
+        checked = selectedOptions.includes(option.id);
+    })
 
     const allActivities = [];
 

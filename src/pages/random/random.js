@@ -1,5 +1,6 @@
 import React from 'react';
 import './random.css';
+import allActivities from 'Questionnaire';
 
 function Random() {
 
@@ -16,6 +17,8 @@ function Random() {
             "season": "Winter"
         },
     ]
+
+    console.log(allActivities);
 
     return (
         <div className="random">

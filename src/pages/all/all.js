@@ -1,5 +1,6 @@
 import React from 'react';
 import './all.css';
+import allActivities from 'Questionnaire';
 
 const all = [
     {
@@ -51,6 +52,8 @@ const all = [
         "halfDay": false
     },
 ]
+
+console.log(allActivities);
 
 function All() {
     return (

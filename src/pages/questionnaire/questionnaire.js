@@ -63,6 +63,8 @@ function Questionnaire() {
 
     //if the activity is true for that specific selection then push it to the allActivities array
 
+    checked=selectedOptions.includes(option.id);
+
     const allActivities = [];
 
     if (Option.id === checked) {

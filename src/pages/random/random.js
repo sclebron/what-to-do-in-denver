@@ -1,6 +1,6 @@
 import React from 'react';
 import './random.css';
-import allActivities from 'Questionnaire';
+// import allActivities from 'Questionnaire';
 
 function Random() {
 
@@ -18,7 +18,7 @@ function Random() {
         },
     ]
 
-    console.log(allActivities);
+    // console.log(allActivities);
 
     return (
         <div className="random">

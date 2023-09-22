@@ -1,7 +1,6 @@
 import React from 'react';
 import './all.css';
-// import Questionnaire from './pages/questionnaire/questionnaire.js';
-// import allActivities from './pages/questionnaire/questionnaire.js';
+import Questionnaire from './questionnaire/questionnaire.js';
 
 const all = [
     {

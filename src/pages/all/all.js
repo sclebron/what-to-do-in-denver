@@ -1,6 +1,5 @@
 import React from 'react';
 import './all.css';
-import Questionnaire from './questionnaire/questionnaire.js';
 
 const all = [
     {
@@ -57,7 +56,7 @@ function All() {
 
     //if the activity is true for that specific selection then push it to the allActivities array
 
-    // const allActivities = [];
+    const allActivities = [];
 
     // if (Option.id === checked) {
     //     all.map((all) => {

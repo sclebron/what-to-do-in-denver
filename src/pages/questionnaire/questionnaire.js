@@ -4,6 +4,7 @@ import './questionnaire.css';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
+    const [allActivities, setallActivities] = useState([]);
 
     const questions = [
         {

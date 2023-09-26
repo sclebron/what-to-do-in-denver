@@ -4,7 +4,7 @@ import './questionnaire.css';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
-    const [allActivities, setallActivities] = useState([]);
+    const [allActivities, setAllActivities] = useState([]);
 
     const questions = [
         {
@@ -51,11 +51,11 @@ function Questionnaire() {
     //     });
     // };
 
-    function handleCheckbox(value, e) {
+    function handleCheckboxChange(value, e) {
         if (e.target.checked) {
             let selectedData = data.filter((d) => d.model === value);
     
-            setFilteredData([...filteredData, ...selectedData]);
+            setAllActivities([...allActivities, ...selectedData]);
         } else {
             let unselected = filteredData.filter((d) => {
             return d.model !== value;

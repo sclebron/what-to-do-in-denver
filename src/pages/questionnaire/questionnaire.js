@@ -41,15 +41,28 @@ function Questionnaire() {
         }
     ]
 
-        const handleCheckboxChange = (optionId) => {
-        setSelectedOptions((prevSelectedOptions) => {
-            if (prevSelectedOptions.includes(optionId)) {
-                return prevSelectedOptions.filter((id) => id !==optionId);
-            } else {
-                return [...prevSelectedOptions, optionId];
-            }
+    //     const handleCheckboxChange = (optionId) => {
+    //     setSelectedOptions((prevSelectedOptions) => {
+    //         if (prevSelectedOptions.includes(optionId)) {
+    //             return prevSelectedOptions.filter((id) => id !==optionId);
+    //         } else {
+    //             return [...prevSelectedOptions, optionId];
+    //         }
+    //     });
+    // };
+
+    function handleCheckbox(value, e) {
+        if (e.target.checked) {
+            let selectedData = data.filter((d) => d.model === value);
+    
+            setFilteredData([...filteredData, ...selectedData]);
+        } else {
+            let unselected = filteredData.filter((d) => {
+            return d.model !== value;
         });
-    };
+            setFilteredData(uncheckedData);
+        }
+    }
 
     const navigate = useNavigate();
 

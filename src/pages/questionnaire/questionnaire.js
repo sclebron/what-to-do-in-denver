@@ -4,7 +4,7 @@ import './questionnaire.css';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
-    const [allActivities, setAllActivities] = useState([]);
+    // const [allActivities, setAllActivities] = useState([]);
 
     const questions = [
         {
@@ -41,28 +41,33 @@ function Questionnaire() {
         }
     ]
 
-    //     const handleCheckboxChange = (optionId) => {
-    //     setSelectedOptions((prevSelectedOptions) => {
-    //         if (prevSelectedOptions.includes(optionId)) {
-    //             return prevSelectedOptions.filter((id) => id !==optionId);
-    //         } else {
-    //             return [...prevSelectedOptions, optionId];
-    //         }
-    //     });
-    // };
-
-    function handleCheckboxChange(value, e) {
-        if (e.target.checked) {
-            let selectedData = data.filter((d) => d.model === value);
-    
-            setAllActivities([...allActivities, ...selectedData]);
-        } else {
-            let unselected = filteredData.filter((d) => {
-            return d.model !== value;
+    const handleCheckboxChange = (optionId) => {
+        setSelectedOptions((prevSelectedOptions) => {
+            if (prevSelectedOptions.includes(optionId)) {
+                return prevSelectedOptions.filter((id) => id !==optionId);
+            } else {
+                return [...prevSelectedOptions, optionId];
+            }
         });
-            setFilteredData(uncheckedData);
-        }
-    }
+    };
+
+    const allActivities = [];
+
+    //create function so that when a option is selected (onChange) then we map through all and if it is true than we push to allActivities. add this function to happen in the return on onChange
+    const 
+
+    // function handleCheckboxChange(value, e) {
+    //     if (e.target.checked) {
+    //         let selectedData = data.filter((d) => d.model === value);
+    
+    //         setAllActivities([...allActivities, ...selectedData]);
+    //     } else {
+    //         let unselected = allActivities.filter((d) => {
+    //         return d.model !== value;
+    //     });
+    //         setAllActivities(uncheckedData);
+    //     }
+    // }
 
     const navigate = useNavigate();
 

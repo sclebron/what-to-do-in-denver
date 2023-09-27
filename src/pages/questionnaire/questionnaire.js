@@ -108,7 +108,7 @@ function Questionnaire() {
 
     const pushToAllActivities = () => {
         all.map((all) => {
-            if(all.halfDay === true) {
+            if(all.option.id === true) {
                 allActivities.push();
             }
         })

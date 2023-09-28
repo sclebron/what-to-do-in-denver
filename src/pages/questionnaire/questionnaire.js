@@ -271,6 +271,7 @@ function Questionnaire() {
                 allActivities.push();
             }
         })
+        console.log(allActivities);
     }
 
     // function handleCheckboxChange(value, e) {

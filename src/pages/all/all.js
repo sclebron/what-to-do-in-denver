@@ -3,6 +3,27 @@ import './all.css';
 
 function All() {
 
+    return (
+        <div className="all">
+        <div className="allContainer">
+        {allActivities.map((allActivities) => (
+                <>
+                <div className="allTitle">{allActivities.title}</div>
+                <img className="allImg" src={allActivities.image} alt="All activity" />
+                <div className="allActivity">
+                    <div className="allDescription">{allActivities.description}</div>
+                    <a className="allWebUrl" href={allActivities.webUrl} target="blank">Visit Website</a>
+                </div>
+                </>
+            ))}
+        </div>
+        </div>
+    )
+}
+
+export default All;
+
+
     //if the activity is true for that specific selection then push it to the allActivities array
 
     // if (Option.id === checked) {
@@ -26,23 +47,3 @@ function All() {
     // })
 
     // console.log(allActivities);
-
-    return (
-        <div className="all">
-        <div className="allContainer">
-        {allActivities.map((allActivities) => (
-                <>
-                <div className="allTitle">{allActivities.title}</div>
-                <img className="allImg" src={allActivities.image} alt="All activity" />
-                <div className="allActivity">
-                    <div className="allDescription">{allActivities.description}</div>
-                    <a className="allWebUrl" href={allActivities.webUrl} target="blank">Visit Website</a>
-                </div>
-                </>
-            ))}
-        </div>
-        </div>
-    )
-}
-
-export default All;

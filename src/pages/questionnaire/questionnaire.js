@@ -23,6 +23,8 @@ function Questionnaire() {
             "inCity": false,
             "1hr": true,
             "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
         },
         {
             "title": "Visit Denver Museum of Nature & Science",
@@ -40,6 +42,8 @@ function Questionnaire() {
             "inCity": true,
             "1hr": false,
             "fewHours": false,
+            "indoors": true,
+            "outdoors": false,
         },
         {
             "title": "Go to a Rockies Game at Coors Field",
@@ -57,6 +61,8 @@ function Questionnaire() {
             "inCity": true,
             "1hr": false,
             "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
         },
         {
             "title": "Ski at Steamboat Ski Resort",
@@ -74,6 +80,8 @@ function Questionnaire() {
             "inCity": false,
             "1hr": false,
             "fewHours": true,
+            "indoors": false,
+            "outdoors": true,
         },
     ]
 
@@ -97,8 +105,8 @@ function Questionnaire() {
         {
             question: "Would you like to do an indoor or outdoor activity?",
             options: [
-                { id: 7, label: "Indoor" },
-                { id: 8, label: "Outdoor" },
+                { id: 7, label: "Indoors" },
+                { id: 8, label: "Outdoors" },
             ],
         },
         {

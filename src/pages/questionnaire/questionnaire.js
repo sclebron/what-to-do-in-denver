@@ -17,7 +17,9 @@ function Questionnaire() {
             "distance": "1hr",
             "place": "Outdoors",
             "season": "Winter",
-            "halfDay": true
+            "halfDay": true,
+            "fullDay": true,
+            "overnight": true,
         },
         {
             "title": "Visit Denver Museum of Nature & Science",
@@ -29,7 +31,9 @@ function Questionnaire() {
             "distance": "Within the city",
             "place": "Indoors",
             "season": "Winter, Spring, Summer, Fall",
-            "halfday": true
+            "halfday": true,
+            "fullDay": false,
+            "overnight": false,
         },
         {
             "title": "Go to a Rockies Game at Coors Field",
@@ -41,7 +45,9 @@ function Questionnaire() {
             "distance": "Within the city",
             "place": "Outdoors",
             "season": "Spring, Summer",
-            "halfDay": true
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
         },
         {
             "title": "Ski at Steamboat Ski Resort",
@@ -53,7 +59,9 @@ function Questionnaire() {
             "distance": "Few hours",
             "place": "Outdoors",
             "season": "Winter",
-            "halfDay": false
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": true,
         },
     ]
 

@@ -263,8 +263,6 @@ function Questionnaire() {
 
     const allActivities = [];
 
-    //create function so that when a option is selected (onChange) then we map through all and if it is true than we push to allActivities. add this function to happen in the return on onChange
-
     const pushToAllActivities = () => {
         all.map((all) => {
             if(all.option.id === true) {

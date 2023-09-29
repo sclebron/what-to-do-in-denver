@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
-import All from './all/all.js';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);

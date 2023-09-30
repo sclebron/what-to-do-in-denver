@@ -196,6 +196,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            "title": "Devil's Head Lookout Hike",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdayhikesneardenver.com%2Fdevils-head-fire-tower-lookout-hike%2F&psig=AOvVaw3bau7B7-XwZtTAfwa1O6H9&ust=1696189264457000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJC7v8aL04EDFQAAAAAdAAAAABAE",
+            "description": "Hike to a U.S. Forest Service fire lookout tower for a beautiful view of Pike National Forest.",
+            "details": "Devil's Head Lookout is an hour and a half drive outside of Denver. It is a 2.7 mile, out and back hike that ends at a fire lookout tower. It's considered a moderate hike, and to reach the top of the lookout tower requires climbing many stairs. The trail sometimes has snow and ice, so it is important to check trail conditions.",
+            "webUrl": "https://www.alltrails.com/trail/us/colorado/devil-s-head-lookout-trail--2",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "1hr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

@@ -177,6 +177,25 @@ function Questionnaire() {
             "summer": false,
             "fall": true,
         },
+        {
+            "title": "Visit Rocky Mountain National Park",
+            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jellystoneofestes.com%2Fcamping-near-rocky-mountain-national-park%2F&psig=AOvVaw3S7AmYU5RWvbbH75RWK4Nc&ust=1696187431312000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJCgxdyE04EDFQAAAAAdAAAAABAE",
+            "description": "Hike, drive, camp, and see wildlife at Rocky Mountain National Park.",
+            "details": "Timed entry permits may be required, depending on the time of year you are visiting the park. Rocky Mountain National Park is approximately a two hour drive from Denver. The nearest entrances from Denver are near Estes Park. Entrance fees are required to enter the park, unless you have an annual pass to the National Parks.",
+            "webUrl": "https://www.nps.gov/romo/index.htm",
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": true,
+            "inCity": false,
+            "1hr": false,
+            "fewHours": true,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

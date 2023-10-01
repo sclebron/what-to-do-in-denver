@@ -253,6 +253,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            "title": "Peak to Peak Scenic Byway",
+            "image": "https://www.gocolorado.com/wp-content/uploads/2010/11/peaktopeak.jpg",
+            "description": "A 55 mile drive that has views of the Rocky Mountains.",
+            "details": "Beginning in Estes Park, about an hour outside of Denver, this scenic drive winds through the Rocky Mountains for 55 miles. This drive is particularly breathtaking in the fall, when the trees are changing color.",
+            "webUrl": "https://www.codot.gov/travel/colorado-byways/north-central/peak-to-peak",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "1hr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": false,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

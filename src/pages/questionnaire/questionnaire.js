@@ -272,6 +272,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            "title": "",
+            "image": "",
+            "description": "",
+            "details": "",
+            "webUrl": "",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "1hr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": false,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

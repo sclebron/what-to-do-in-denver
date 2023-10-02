@@ -291,6 +291,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            "title": "Go to a Concert at Red Rocks",
+            "image": "https://images.squarespace-cdn.com/content/v1/52991237e4b06b094787fe1d/1558644190914-6TOUJP92QK2JY0NNH9JW/printshop11.jpg?format=1500w",
+            "description": "Enjoy live music at one of the country's most beautiful natural outdoor venues.",
+            "details": "Red Rocks Amphitheater is near Morrison, CO, approximately 30 minutes outside of Denver. Tickets to Red Rocks shows can be purchased from the Red Rocks website, as well as from resale websites.",
+            "webUrl": "https://www.theredrocksamphitheater.com/",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "1hr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

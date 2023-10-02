@@ -3,7 +3,7 @@ import './all.css';
 
 function All(props) {
 
-    const allActivities = {props,allActivities}
+    let allActivities = {props,allActivities}
 
     return (
         <div className="all">

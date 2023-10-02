@@ -338,7 +338,7 @@ function Questionnaire() {
         });
     };
 
-    const allActivities = [];
+    let allActivities = [];
 
     const pushToAllActivities = () => {
         all.map((all) => {

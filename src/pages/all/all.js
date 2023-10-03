@@ -1,9 +1,7 @@
 import React from 'react';
 import './all.css';
 
-function All(props) {
-
-    let allActivities = {props,allActivities}
+function All({allActivities}) {
 
     return (
         <div className="all">

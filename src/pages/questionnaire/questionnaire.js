@@ -310,6 +310,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            "title": "Go Tubing at Clear Creek",
+            "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/goldenco/TubingClearCreek_1_5c3c2930-cc7d-433d-88c4-e6657b85a169.jpg",
+            "description": "Clear Creek is a popular spot for tubing during the summer.",
+            "details": "Clear Creek runs through Golden, CO. Tubes can be rented at multiple rental shops in Golden.",
+            "webUrl": "https://www.cityofgolden.net/play/recreation-attractions/clear-creek-white-water-park/",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "1hr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": false,
+            "summer": true,
+            "fall": false,
+        },
     ]
 
     const questions = [

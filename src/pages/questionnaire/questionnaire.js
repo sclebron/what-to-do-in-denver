@@ -383,6 +383,7 @@ function Questionnaire() {
             if(all.option.id === true) {
                 allActivities.push();
             }
+            return allActivities;
         })
         console.log(allActivities);
     }

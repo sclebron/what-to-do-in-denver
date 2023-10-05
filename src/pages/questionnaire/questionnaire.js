@@ -329,6 +329,25 @@ function Questionnaire() {
             "summer": true,
             "fall": false,
         },
+        {
+            "title": "Visit Great Sand Dunes National Park",
+            "image": "",
+            "description": "",
+            "details": "",
+            "webUrl": "",
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": true,
+            "inCity": false,
+            "1hr": false,
+            "fewHours": true,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

@@ -7,14 +7,14 @@ function All({allActivities}) {
         <div className="all">
         <div className="allContainer">
         {allActivities?.map((allActivities) => (
-                <>
+                <li key="{allActivities}">
                 <div className="allTitle">{allActivities.title}</div>
                 <img className="allImg" src={allActivities.image} alt="All activity" />
                 <div className="allActivity">
                     <div className="allDescription">{allActivities.description}</div>
                     <a className="allWebUrl" href={allActivities.webUrl} target="blank">Visit Website</a>
                 </div>
-                </>
+                </li>
             ))}
         </div>
         </div>

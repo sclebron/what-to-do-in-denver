@@ -6,7 +6,7 @@ function All({allActivities}) {
     return (
         <div className="all">
         <div className="allContainer">
-        {allActivities.map((allActivities) => (
+        {allActivities?.map((allActivities) => (
                 <>
                 <div className="allTitle">{allActivities.title}</div>
                 <img className="allImg" src={allActivities.image} alt="All activity" />

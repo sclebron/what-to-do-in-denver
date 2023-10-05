@@ -331,10 +331,10 @@ function Questionnaire() {
         },
         {
             "title": "Visit Great Sand Dunes National Park",
-            "image": "",
+            "image": "https://www.nps.gov/grsa/planyourvisit/images/grsa-fresh-snow-mts-gold-cottonwoods-2018-jpg.jpg?maxwidth=1300&maxheight=1300&autorotate=false",
             "description": "",
             "details": "",
-            "webUrl": "",
+            "webUrl": "https://www.nps.gov/grsa/index.htm",
             "halfDay": false,
             "fullDay": true,
             "overnight": true,

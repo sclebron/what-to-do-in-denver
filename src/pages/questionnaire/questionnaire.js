@@ -348,6 +348,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            "title": "Hike to Maroon Bells",
+            "image": "",
+            "description": "",
+            "details": "",
+            "webUrl": "",
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": true,
+            "inCity": false,
+            "1hr": false,
+            "fewHours": true,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": false,
+            "summer": true,
+            "fall": true,
+        },
     ]
 
     const questions = [

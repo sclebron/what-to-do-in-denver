@@ -332,8 +332,8 @@ function Questionnaire() {
         {
             "title": "Visit Great Sand Dunes National Park",
             "image": "https://www.nps.gov/grsa/planyourvisit/images/grsa-fresh-snow-mts-gold-cottonwoods-2018-jpg.jpg?maxwidth=1300&maxheight=1300&autorotate=false",
-            "description": "Experience the tallest sand dunes in the United States!",
-            "details": "",
+            "description": "Experience the tallest sand dunes in North America!",
+            "details": "Located in southern Colorado, Great Sand Dune National Park is a 4 hour drive from Denver. There are no reservations or timed entries required to enter the park, but an entrance pass is required. Entrance passes can be purchased as you enter the park for $25.",
             "webUrl": "https://www.nps.gov/grsa/index.htm",
             "halfDay": false,
             "fullDay": true,

@@ -510,4 +510,4 @@ function Questionnaire() {
     )
 }
 
-export default Questionnaire;
+export default { Questionnaire, all, allActivities };

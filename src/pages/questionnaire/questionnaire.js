@@ -24,6 +24,7 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
+            "id": 1,
         },
         {
             "title": "Visit Denver Museum of Nature & Science",
@@ -43,6 +44,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 2,
         },
         {
             "title": "Go to a Rockies Game at Coors Field",
@@ -62,6 +64,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": false,
+            "id": 3,
         },
         {
             "title": "Ski at Steamboat Ski Resort",
@@ -81,6 +84,7 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
+            "id": 4,
         },
         {
             "title": "Go to Broncos Game at Mile High",
@@ -100,6 +104,7 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": true,
+            "id": 5,
         },
         {
             "title": "Go to an Avalanche Game",
@@ -119,6 +124,7 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": true,
+            "id": 6,
         },
         {
             "title": "Ski at Winter Park",
@@ -138,6 +144,7 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
+            "id": 7,
         },
         {
             "title": "Ski at Aspen Snowmass Ski Resort",
@@ -157,6 +164,7 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
+            "id": 8,
         },
         {
             "title": "Go to a Nuggets Game at Ball Arena",
@@ -176,6 +184,7 @@ function Questionnaire() {
             "spring": true,
             "summer": false,
             "fall": true,
+            "id": 9,
         },
         {
             "title": "Visit Rocky Mountain National Park",
@@ -195,6 +204,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 10,
         },
         {
             "title": "Devil's Head Lookout Hike",
@@ -214,6 +224,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 11,
         },
         {
             "title": "Go To Washington Park",
@@ -233,6 +244,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 12,
         },
         {
             "title": "Hike the Manitou Incline",
@@ -252,6 +264,7 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
+            "id": 13,
         },
         {
             "title": "Peak to Peak Scenic Byway",
@@ -271,6 +284,7 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
+            "id": 14,
         },
         {
             "title": "Visit Union Station",
@@ -290,6 +304,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 15,
         },
         {
             "title": "Go to a Concert at Red Rocks",
@@ -309,6 +324,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 16,
         },
         {
             "title": "Go Tubing at Clear Creek",
@@ -328,6 +344,7 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": false,
+            "id": 17,
         },
         {
             "title": "Visit Great Sand Dunes National Park",
@@ -347,6 +364,7 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
+            "id": 18,
         },
         {
             "title": "Hike to Maroon Bells",
@@ -366,6 +384,7 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
+            "id": 19,
         },
     ]
 

@@ -6,13 +6,13 @@ function All({allActivities}) {
     return (
         <div className="all">
         <div className="allContainer">
-        {allActivities?.map((allActivity) => (
-                <li key={allActivity.id}>
-                <div className="allTitle">{allActivity.title}</div>
-                <img className="allImg" src={allActivity.image} alt="All activity" />
+        {allActivities?.map((activity) => (
+                <li key={activity.id}>
+                <div className="allTitle">{activity.title}</div>
+                <img className="allImg" src={activity.image} alt="All activity" />
                 <div className="allActivity">
-                    <div className="allDescription">{allActivity.description}</div>
-                    <a className="allWebUrl" href={allActivity.webUrl} target="blank">Visit Website</a>
+                    <div className="allDescription">{activity.description}</div>
+                    <a className="allWebUrl" href={activity.webUrl} target="blank">Visit Website</a>
                 </div>
                 </li>
             ))}

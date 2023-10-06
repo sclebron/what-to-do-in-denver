@@ -7,6 +7,7 @@ function Questionnaire() {
 
     const all = [
         {
+            id: 1,
             "title": "Ski at Copper Mountain",
             "image": "https://cdn.5280.com/2022/12/00_Copper-50th_hero-2022-960x720.jpg",
             "description": "Copper mountain has ski runs for all levels, with the West side of the mountain perfect for beginners, and the East side perfect for more advanced skiers.",
@@ -24,9 +25,9 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
-            "id": 1,
         },
         {
+            id: 2,
             "title": "Visit Denver Museum of Nature & Science",
             "image": "https://media2.westword.com/den/imager/u/slideshow/10120352/dmnsdino.jpg",
             "description": "Learn about everything from dinosaurs to astronomy at the Denver Museum of Nature & Science!",
@@ -44,9 +45,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 2,
         },
         {
+            id: 3,
             "title": "Go to a Rockies Game at Coors Field",
             "image": "https://assets.simpleviewinc.com/simpleview/image/upload/crm/denver/Colorado-Rockies_7C649933-EFF0-51B0-9A02E85385D86848_7c6e2c50-dc33-ec19-aec679274174a195.jpg",
             "description": "Watch the Rockies play at the iconic Coors Field. There are lots of bars and restaurants nearby to visit before or after the game!",
@@ -64,9 +65,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": false,
-            "id": 3,
         },
         {
+            id: 4,
             "title": "Ski at Steamboat Ski Resort",
             "image": "https://www.steamboat-springs.com/assets/page_headers/Steamboat_Ski_Resort.jpg",
             "description": "Ski during the day or night at Steamboat Ski Resort!",
@@ -84,9 +85,9 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
-            "id": 4,
         },
         {
+            id: 5,
             "title": "Go to Broncos Game at Mile High",
             "image": "https://www.stadiumsofprofootball.com/wp-content/uploads/2016/07/milehigh21951.jpg",
             "description": "See the Broncos play at Empower Field at Mile High Stadium.",
@@ -104,9 +105,9 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": true,
-            "id": 5,
         },
         {
+            id: 6,
             "title": "Go to an Avalanche Game",
             "image": "https://kdvr.com/wp-content/uploads/sites/11/2022/06/GettyImages-1403173601.jpg?w=2560&h=1440&crop=1",
             "description": "See Colorado's NHL team play at Ball Arena.",
@@ -124,9 +125,9 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": true,
-            "id": 6,
         },
         {
+            id: 7,
             "title": "Ski at Winter Park",
             "image": "https://res.cloudinary.com/miles-extranet-dev/image/upload/v1582130613/Winter_Park/account_photos/45/5b529c7b4d8857a8d81c9a2117ee42aa_2019_WP_CharlesStemen_DSC024631.jpg",
             "description": "Winter Park is a very beginner friendly ski resort located just 75 miles from Denver.",
@@ -144,9 +145,9 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
-            "id": 7,
         },
         {
+            id: 8,
             "title": "Ski at Aspen Snowmass Ski Resort",
             "image": "https://www.aspensnowmass.com/-/media/aspen-snowmass/images/hero/hero-image/winter/2021-22/snowmass-hero-08182021.jpg?mw=1506&mh=930&hash=8711362070C02D29B00C0D09593FB504",
             "description": "Ski at one of the four resorts (Aspen, Aspen Highlands, Snowmass, and Buttermilk) that make up the Aspen Snowmass Ski Resort!",
@@ -164,9 +165,9 @@ function Questionnaire() {
             "spring": false,
             "summer": false,
             "fall": false,
-            "id": 8,
         },
         {
+            id: 9,
             "title": "Go to a Nuggets Game at Ball Arena",
             "image": "https://www.denverpost.com/wp-content/uploads/2023/06/TDP-L-NUGGS-HEAT-GAME-ONE_DSC5093.jpg?w=1024",
             "description": "See Denver's NBA team, the Nuggets, play at Ball Arena.",
@@ -184,9 +185,9 @@ function Questionnaire() {
             "spring": true,
             "summer": false,
             "fall": true,
-            "id": 9,
         },
         {
+            id: 10,
             "title": "Visit Rocky Mountain National Park",
             "image": "https://www.jellystoneofestes.com/wp-content/uploads/2016/12/rockymountain.jpg",
             "description": "Hike, drive, camp, and see wildlife at Rocky Mountain National Park.",
@@ -204,9 +205,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 10,
         },
         {
+            id: 11,
             "title": "Devil's Head Lookout Hike",
             "image": "https://dayhikesneardenver.b-cdn.net/wp-content/uploads/2013/03/devils_head_northtolongs.jpg",
             "description": "Hike to a U.S. Forest Service fire lookout tower for a beautiful view of Pike National Forest.",
@@ -224,9 +225,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 11,
         },
         {
+            id: 12,
             "title": "Go To Washington Park",
             "image": "https://img1.10bestmedia.com/Images/Photos/334671/p-IMG-4408_55_660x440.jpg",
             "description": "Have a picnic, play volleyball, or go for a walk in Washington Park.",
@@ -244,9 +245,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 12,
         },
         {
+            id: 13,
             "title": "Hike the Manitou Incline",
             "image": "https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/4/32/432e47c8-df3b-52bb-9f2a-5add02b8ddd3/5f501230a7b39.image.jpg?crop=1247%2C1247%2C207%2C0&resize=1247%2C1247&order=crop%2Cresize",
             "description": "Hike this challenging route which consists of over 2,700 steps.",
@@ -264,9 +265,9 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
-            "id": 13,
         },
         {
+            id: 14,
             "title": "Peak to Peak Scenic Byway",
             "image": "https://www.gocolorado.com/wp-content/uploads/2010/11/peaktopeak.jpg",
             "description": "A 55 mile drive that has views of the Rocky Mountains.",
@@ -284,9 +285,9 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
-            "id": 14,
         },
         {
+            id: 15,
             "title": "Visit Union Station",
             "image": "https://media.cntraveler.com/photos/5bdb4ac22e350417aea9d74b/16:9/w_2560,c_limit/Denver%20Union%20Station_DUSExtJune20_2.jpg",
             "description": "Explore restaurants and shops in Denver's downtown train station.",
@@ -304,9 +305,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 15,
         },
         {
+            id: 16,
             "title": "Go to a Concert at Red Rocks",
             "image": "https://images.squarespace-cdn.com/content/v1/52991237e4b06b094787fe1d/1558644190914-6TOUJP92QK2JY0NNH9JW/printshop11.jpg?format=1500w",
             "description": "Enjoy live music at one of the country's most beautiful natural outdoor venues.",
@@ -324,9 +325,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 16,
         },
         {
+            id: 17,
             "title": "Go Tubing at Clear Creek",
             "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/goldenco/TubingClearCreek_1_5c3c2930-cc7d-433d-88c4-e6657b85a169.jpg",
             "description": "Clear Creek is a popular spot for tubing during the summer.",
@@ -344,9 +345,9 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": false,
-            "id": 17,
         },
         {
+            id: 18,
             "title": "Visit Great Sand Dunes National Park",
             "image": "https://www.nps.gov/grsa/planyourvisit/images/grsa-fresh-snow-mts-gold-cottonwoods-2018-jpg.jpg?maxwidth=1300&maxheight=1300&autorotate=false",
             "description": "Experience the tallest sand dunes in North America!",
@@ -364,9 +365,9 @@ function Questionnaire() {
             "spring": true,
             "summer": true,
             "fall": true,
-            "id": 18,
         },
         {
+            id: 19,
             "title": "Hike to Maroon Bells",
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Maroon_Bells_%2811553%29a.jpg",
             "description": "Hike to see one of the most recognizable mountains in the United States.",
@@ -384,9 +385,9 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
-            "id": 19,
         },
         {
+            id: 20,
             "title": "",
             "image": "",
             "description": "",
@@ -404,7 +405,6 @@ function Questionnaire() {
             "spring": false,
             "summer": true,
             "fall": true,
-            "id": 20,
         },
     ]
 

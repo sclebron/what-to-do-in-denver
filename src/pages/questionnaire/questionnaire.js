@@ -410,6 +410,7 @@ function Questionnaire() {
 
     const questions = [
         {
+            id: 0,
             question: "How long would you like the activity to take?",
             options: [
                 { id: 1, label: "Half day" },
@@ -418,6 +419,7 @@ function Questionnaire() {
             ],
         },
         {
+            id: 1,
             question: "How far from Denver would you like to travel?",
             options: [
                 { id: 4, label: "Within the city" },
@@ -426,6 +428,7 @@ function Questionnaire() {
             ],
         },
         {
+            id: 2,
             question: "Would you like to do an indoor or outdoor activity?",
             options: [
                 { id: 7, label: "Indoors" },
@@ -433,6 +436,7 @@ function Questionnaire() {
             ],
         },
         {
+            id: 3,
             question: "In what season will you be doing the activity?",
             options: [
                 { id: 9, label: "Winter" },
@@ -465,19 +469,6 @@ function Questionnaire() {
         console.log(allActivities);
     }
 
-    // function handleCheckboxChange(value, e) {
-    //     if (e.target.checked) {
-    //         let selectedData = data.filter((d) => d.model === value);
-    
-    //         setAllActivities([...allActivities, ...selectedData]);
-    //     } else {
-    //         let unselected = allActivities.filter((d) => {
-    //         return d.model !== value;
-    //     });
-    //         setAllActivities(uncheckedData);
-    //     }
-    // }
-
     const navigate = useNavigate();
 
     const navigateToAll = () => {
@@ -494,7 +485,7 @@ function Questionnaire() {
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
                 {questions.map((questions) => (
-                    <div className="question">
+                    <div className="question" key={questions.id}>
                         <div className="questionOnly">{questions.question}</div>
                         {questions.options.map((option) => (
                         <label key={option.id} className="options">

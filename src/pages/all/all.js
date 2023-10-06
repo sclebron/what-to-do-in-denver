@@ -1,7 +1,8 @@
 import React from 'react';
 import './all.css';
+import { all, allActivities } from './Questionnaire'
 
-function All({allActivities}) {
+function All() {
 
     return (
         <div className="all">

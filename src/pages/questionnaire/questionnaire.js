@@ -350,8 +350,8 @@ function Questionnaire() {
         },
         {
             "title": "Hike to Maroon Bells",
-            "image": "",
-            "description": "",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Maroon_Bells_%2811553%29a.jpg",
+            "description": "Hike to see one of the most recognizable mountains in the United States.",
             "details": "",
             "webUrl": "",
             "halfDay": false,

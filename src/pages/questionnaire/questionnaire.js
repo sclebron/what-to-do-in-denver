@@ -388,8 +388,8 @@ function Questionnaire() {
         },
         {
             id: 19,
-            "title": "",
-            "image": "",
+            "title": "Visit Mesa Verde National Park",
+            "image": "https://eoimages.gsfc.nasa.gov/images/imagerecords/88000/88632/99C97231-1DD8-B71B-0B80F0D734C77303_lrg.jpg",
             "description": "",
             "details": "",
             "webUrl": "",

@@ -1,7 +1,9 @@
 import React from 'react';
 import './all.css';
 
-function All({allActivities}) {
+function All(props) {
+
+    const allActivities = props.allActivities;
 
     return (
         <div className="all">

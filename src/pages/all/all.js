@@ -8,7 +8,7 @@ function All(props) {
     return (
         <div className="all">
         <div className="allContainer">
-        {allActivities?.map((activity) => (
+        {allActivities.map((activity) => (
                 <li key={activity.id}>
                 <div className="allTitle">{activity.title}</div>
                 <img className="allImg" src={activity.image} alt="All activity" />

@@ -479,6 +479,8 @@ function Questionnaire() {
         navigate('/random');
     }
 
+    console.log(allActivities);
+
     return (
         <div className="questionnaire">
         <div className="questionnaireContainer">
@@ -510,4 +512,4 @@ function Questionnaire() {
     )
 }
 
-export default Questionnaire;
+export default { Questionnaire, allActivities };

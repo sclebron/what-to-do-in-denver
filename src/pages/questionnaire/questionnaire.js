@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
+import All from './all.js';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
@@ -508,6 +509,7 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
+        <All allActivities={allActivities} />
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import './all.css';
-import { allActivities } from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/questionnaire/questionnaire.js';
 
 function All() {
 

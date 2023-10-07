@@ -411,7 +411,7 @@ function Questionnaire() {
             id: 20,
             "title": "Visit Black Canyon of the Gunnison National Park",
             "image": "https://www.magnificentworld.com/wp-content/uploads/2021/02/Black-Canyon-of-the-Gunnison.jpg",
-            "description": "",
+            "description": "Head to western Colorado to see one of the most narrow canyons in North America.",
             "details": "",
             "webUrl": "https://www.nps.gov/blca/index.htm",
             "halfDay": false,

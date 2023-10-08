@@ -412,7 +412,7 @@ function Questionnaire() {
             "title": "Visit Black Canyon of the Gunnison National Park",
             "image": "https://www.magnificentworld.com/wp-content/uploads/2021/02/Black-Canyon-of-the-Gunnison.jpg",
             "description": "Head to western Colorado to see one of the most narrow canyons in North America.",
-            "details": "",
+            "details": "Located approximately 5 hours outside of Denver, Black Canyon of the Gunnison is a day trip or stay overnight to see the stars at this International Dark Sky Park. You can enter the North or South Rim. An entrance pass is required to enter, which can be purchased online in advance, or upon arrival only at the South Rim.",
             "webUrl": "https://www.nps.gov/blca/index.htm",
             "halfDay": false,
             "fullDay": true,
@@ -430,7 +430,7 @@ function Questionnaire() {
         {
             id: 21,
             "title": "Go for a Bike Ride on Cherry Creek Trail",
-            "image": "",
+            "image": "https://res.cloudinary.com/simpleview/image/upload/v1476756488/clients/denver/cherry-creek-path-bikes_57313449-f0ae-5102-065bde7317fe103b.jpg",
             "description": "",
             "details": "",
             "webUrl": "",

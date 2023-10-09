@@ -520,7 +520,7 @@ function Questionnaire() {
         navigate('/random');
     }
 
-    console.log(allActivities);
+    console.log(activities);
 
     return (
         <div className="questionnaire">
@@ -537,7 +537,7 @@ function Questionnaire() {
                                 type="checkbox"
                                 className="selectbox"
                                 checked={selectedOptions.includes(option.id)}
-                                onChange={() => handleCheckboxChange(option.id) && pushToActivities() && parentToChild()}
+                                onChange={() => handleCheckboxChange(option.id) && pushToActivities()}
                             />
                             {option.label}
                         </label>

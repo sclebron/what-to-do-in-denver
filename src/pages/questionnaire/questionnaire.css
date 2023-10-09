@@ -68,3 +68,8 @@
     background-color: black;
     cursor: pointer;
 }
+
+.hideAll {
+    visibility: hidden;
+    display: none;
+}

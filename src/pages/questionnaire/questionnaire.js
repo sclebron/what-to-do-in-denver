@@ -552,6 +552,8 @@ function Questionnaire() {
         <All allActivites={activities}/>
         </div>
     )
+
+    console.log(activities);
 }
 
 export default Questionnaire;

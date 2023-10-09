@@ -1,11 +1,10 @@
 import React from 'react';
 import './all.css';
 
-function All({parentToChild}) {
+function All() {
 
     return (
         <div className="all">
-            {parentToChild}
         <div className="allContainer">
         {allActivities.map((activity) => (
                 <li key={activity.id}>

@@ -5,11 +5,6 @@ import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
-    const [data, setData] = useState('');
-
-    const parentToChild = () => {
-        setData("this is data...");
-    }
 
     const all = [
         {
@@ -503,16 +498,16 @@ function Questionnaire() {
         });
     };
 
-    let allActivities = [];
+    let activities = [];
 
-    const pushToAllActivities = () => {
+    const pushToActivities = () => {
         all.map((all) => {
             if(all.option.id === true) {
-                allActivities.push();
+                activities.push();
             }
-            return allActivities;
+            return activities;
         })
-        console.log(allActivities);
+        console.log(activities);
     }
 
     const navigate = useNavigate();
@@ -529,6 +524,7 @@ function Questionnaire() {
 
     return (
         <div className="questionnaire">
+            <All allActivites={activities}/>
         <div className="questionnaireContainer">
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
@@ -541,7 +537,7 @@ function Questionnaire() {
                                 type="checkbox"
                                 className="selectbox"
                                 checked={selectedOptions.includes(option.id)}
-                                onChange={() => handleCheckboxChange(option.id) && pushToAllActivities() && parentToChild()}
+                                onChange={() => handleCheckboxChange(option.id) && pushToActivities() && parentToChild()}
                             />
                             {option.label}
                         </label>
@@ -554,7 +550,6 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        <All parentToChild={data}/>
         </div>
     )
 }

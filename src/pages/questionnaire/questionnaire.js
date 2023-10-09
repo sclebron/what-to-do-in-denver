@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
-// import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
+import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
+    const [data, setData] = useState('');
+
+    const parentToChild = () => {
+        setData("this is data...");
+    }
 
     const all = [
         {
@@ -536,7 +541,7 @@ function Questionnaire() {
                                 type="checkbox"
                                 className="selectbox"
                                 checked={selectedOptions.includes(option.id)}
-                                onChange={() => handleCheckboxChange(option.id) && pushToAllActivities()}
+                                onChange={() => handleCheckboxChange(option.id) && pushToAllActivities() && parentToChild()}
                             />
                             {option.label}
                         </label>
@@ -549,7 +554,7 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        {/* <All allActivities={allActivities} className="hideAll"/> */}
+        <All parentToChild={data}/>
         </div>
     )
 }

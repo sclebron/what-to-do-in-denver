@@ -498,16 +498,22 @@ function Questionnaire() {
         });
     };
 
-    let activities = [];
+    // let activities = [];
 
-    const pushToActivities = () => {
-        all.map((all) => {
-            if(all.option.id === true) {
-                activities.push();
-            }
-            return activities;
-        })
-        console.log(activities);
+    // const pushToActivities = () => {
+    //     all.map((all) => {
+    //         if(all.option.id === true) {
+    //             activities.push();
+    //         }
+    //         return activities;
+    //     })
+    //     console.log(activities);
+    // }
+
+    const [targetArray, setTargetArray] = useState([]);
+
+    const moveData = (selectedId) => {
+        
     }
 
     const navigate = useNavigate();

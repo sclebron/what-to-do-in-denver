@@ -525,6 +525,9 @@ function Questionnaire() {
 
     return (
         <div className="questionnaire">
+            <div className="hideActivites">
+                <All allActivites={ activities }/>
+            </div>
         <div className="questionnaireContainer">
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
@@ -550,7 +553,6 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        <All allActivites={activities}/>
         </div>
     )
 

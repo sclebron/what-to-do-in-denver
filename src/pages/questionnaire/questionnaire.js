@@ -520,6 +520,7 @@ function Questionnaire() {
         navigate('/random');
     }
 
+    //this console log or some console.log for activities in questionnaire is returning an empty array. no activities are being pushed to the activities array.
     console.log(activities);
 
     return (

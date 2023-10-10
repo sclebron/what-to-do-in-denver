@@ -5,7 +5,8 @@ function All(props) {
 
     const { allActivities } = props;
 
-    console.log(allActivities);
+    //this console.log is returning 'undefined'
+    console.log(allActivities); 
 
     return (
         <div className="all">

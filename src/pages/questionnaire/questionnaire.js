@@ -431,7 +431,7 @@ function Questionnaire() {
             id: 21,
             "title": "Go for a Bike Ride on Cherry Creek Trail",
             "image": "https://res.cloudinary.com/simpleview/image/upload/v1476756488/clients/denver/cherry-creek-path-bikes_57313449-f0ae-5102-065bde7317fe103b.jpg",
-            "description": "",
+            "description": "Ride your bike down part or all of this 40 mile paved trail.",
             "details": "",
             "webUrl": "https://www.alltrails.com/trail/us/colorado/cherry-creek-trail",
             "halfDay": true,

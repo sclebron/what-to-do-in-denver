@@ -68,8 +68,3 @@
     background-color: black;
     cursor: pointer;
 }
-
-.hideActivities {
-    visibility: hidden;
-    display: none;
-}

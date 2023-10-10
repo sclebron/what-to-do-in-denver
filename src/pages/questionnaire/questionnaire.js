@@ -432,7 +432,7 @@ function Questionnaire() {
             "title": "Go for a Bike Ride on Cherry Creek Trail",
             "image": "https://res.cloudinary.com/simpleview/image/upload/v1476756488/clients/denver/cherry-creek-path-bikes_57313449-f0ae-5102-065bde7317fe103b.jpg",
             "description": "Ride your bike down part or all of this 40 mile paved trail.",
-            "details": "",
+            "details": "Beginning in Confluence Park and ending in Franktown, the Cherry Creek Trail is a paved path that winds through several Denver neighborhoods. It is mostly used by walkers, runners, and bikers, and offers access to multiple parks, restaurants, and shopping areas.",
             "webUrl": "https://www.alltrails.com/trail/us/colorado/cherry-creek-trail",
             "halfDay": true,
             "fullDay": false,

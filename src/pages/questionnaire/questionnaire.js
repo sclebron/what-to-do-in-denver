@@ -6,7 +6,7 @@ import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
 
-    const all = [
+    const [sourceArray, setSourceArray] = useState([
         {
             id: 0,
             "title": "Ski at Copper Mountain",
@@ -447,7 +447,7 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
-    ]
+    ]);
 
     const questions = [
         {
@@ -497,18 +497,6 @@ function Questionnaire() {
             }
         });
     };
-
-    // let activities = [];
-
-    // const pushToActivities = () => {
-    //     all.map((all) => {
-    //         if(all.option.id === true) {
-    //             activities.push();
-    //         }
-    //         return activities;
-    //     })
-    //     console.log(activities);
-    // }
 
     const [targetArray, setTargetArray] = useState([]);
 

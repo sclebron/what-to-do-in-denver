@@ -513,7 +513,11 @@ function Questionnaire() {
     const [targetArray, setTargetArray] = useState([]);
 
     const moveData = (selectedId) => {
-        
+        const selectedOption = sourceArray.find(item => item.id === selectedId);
+
+        setSourceArray(prevSourceArray => prevSourceArray.filter(item => item.id !== selectedId));
+
+        setTargetArray(prevTargetArray = [...prevTargetArray, selectedOption]);
     }
 
     const navigate = useNavigate();

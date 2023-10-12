@@ -505,7 +505,7 @@ function Questionnaire() {
 
         setSourceArray(prevSourceArray => prevSourceArray.filter(item => item.id !== selectedId));
 
-        setTargetArray(prevTargetArray = [...prevTargetArray, selectedOption]);
+        setTargetArray(prevTargetArray => [...prevTargetArray, selectedOption]);
     }
 
     const navigate = useNavigate();

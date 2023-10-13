@@ -538,7 +538,7 @@ function Questionnaire() {
                                 type="checkbox"
                                 className="selectbox"
                                 checked={selectedOptions.includes(option.id)}
-                                onChange={() => handleCheckboxChange(option.id) && pushToActivities()}
+                                onChange={() => handleCheckboxChange(option.id) && moveData()}
                             />
                             {option.label}
                         </label>

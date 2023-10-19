@@ -6,7 +6,7 @@ import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
 
-    const [sourceArray, setSourceArray] = useState([
+    const all = [
         {
             id: 0,
             "title": "Ski at Copper Mountain",
@@ -447,7 +447,7 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
-    ]);
+    ];
 
     const questions = [
         {
@@ -498,16 +498,6 @@ function Questionnaire() {
         });
     };
 
-    const [targetArray, setTargetArray] = useState([]);
-
-    const moveData = (selectedId) => {
-        const selectedOption = sourceArray.find(item => item.id === selectedId);
-
-        setSourceArray(prevSourceArray => prevSourceArray.filter(item => item.id !== selectedId));
-
-        setTargetArray(prevTargetArray => [...prevTargetArray, selectedOption]);
-    }
-
     const navigate = useNavigate();
 
     const navigateToAll = () => {
@@ -538,7 +528,7 @@ function Questionnaire() {
                                 type="checkbox"
                                 className="selectbox"
                                 checked={selectedOptions.includes(option.id)}
-                                onChange={() => handleCheckboxChange(option.id) && moveData()}
+                                onChange={() => handleCheckboxChange(option.id)}
                             />
                             {option.label}
                         </label>

@@ -509,13 +509,13 @@ function Questionnaire() {
     }
 
     //this console log or some console.log for activities in questionnaire is returning an empty array. no activities are being pushed to the activities array.
-    console.log(activities);
+    // console.log(activities);
 
     return (
         <div className="questionnaire">
-            <div className="hideActivites">
+            {/* <div className="hideActivites">
                 <All allActivites={ activities }/>
-            </div>
+            </div> */}
         <div className="questionnaireContainer">
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
@@ -544,7 +544,6 @@ function Questionnaire() {
         </div>
     )
 
-    console.log(activities);
 }
 
 export default Questionnaire;

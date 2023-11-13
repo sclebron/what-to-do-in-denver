@@ -18,7 +18,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -38,7 +38,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": true,
             "outdoors": false,
@@ -58,7 +58,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -78,7 +78,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -98,7 +98,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -118,7 +118,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": true,
             "outdoors": false,
@@ -138,7 +138,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -158,7 +158,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -178,7 +178,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": true,
             "outdoors": false,
@@ -198,7 +198,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -218,7 +218,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -238,7 +238,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -258,7 +258,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -278,7 +278,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -298,7 +298,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": true,
             "outdoors": false,
@@ -318,7 +318,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -338,7 +338,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": false,
-            "1hr": true,
+            "oneHr": true,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -358,7 +358,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -378,7 +378,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -398,7 +398,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -418,7 +418,7 @@ function Questionnaire() {
             "fullDay": true,
             "overnight": true,
             "inCity": false,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": true,
             "indoors": false,
             "outdoors": true,
@@ -438,7 +438,7 @@ function Questionnaire() {
             "fullDay": false,
             "overnight": false,
             "inCity": true,
-            "1hr": false,
+            "oneHr": false,
             "fewHours": false,
             "indoors": false,
             "outdoors": true,
@@ -508,8 +508,36 @@ function Questionnaire() {
         navigate('/random');
     }
 
-    //this console log or some console.log for activities in questionnaire is returning an empty array. no activities are being pushed to the activities array.
-    // console.log(activities);
+    const allActivites = []
+
+    const pushToAllActivities = () => {
+        const filteredActivities = all.filter(activity => {
+            return (
+                // Check if the activity duration is selected
+                (selectedOptions.includes(1) && activity.halfDay) ||
+                (selectedOptions.includes(2) && activity.fullDay) ||
+                (selectedOptions.includes(3) && activity.overnight) ||
+
+                // Check if the travel distance is selected
+                (selectedOptions.includes(4) && activity.inCity) ||
+                (selectedOptions.includes(5) && activity.oneHr) ||
+                (selectedOptions.includes(6) && activity.fewHours) ||
+
+                // Check if the activity type (indoor/outdoor) is selected
+                (selectedOptions.includes(7) && activity.indoors) ||
+                (selectedOptions.includes(8) && activity.outdoors) ||
+
+                // Check if the season is selected
+                (selectedOptions.includes(9) && activity.winter) ||
+                (selectedOptions.includes(10) && activity.spring) ||
+                (selectedOptions.includes(11) && activity.summer) ||
+                (selectedOptions.includes(12) && activity.fall)
+            );
+    });
+
+    allActivities.push(...filteredActivities);
+
+    console.log(allActivities);
 
     return (
         <div className="questionnaire">

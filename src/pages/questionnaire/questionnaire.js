@@ -508,7 +508,7 @@ function Questionnaire() {
         navigate('/random');
     }
 
-    const allActivites = []
+    const allActivities = []
 
     const pushToAllActivities = () => {
         const filteredActivities = all.filter(activity => {
@@ -538,6 +538,7 @@ function Questionnaire() {
     allActivities.push(...filteredActivities);
 
     console.log(allActivities);
+    }
 
     return (
         <div className="questionnaire">

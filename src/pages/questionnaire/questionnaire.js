@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
-import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
@@ -542,9 +541,6 @@ function Questionnaire() {
 
     return (
         <div className="questionnaire">
-            {/* <div className="hideActivites">
-                <All allActivites={ activities }/>
-            </div> */}
         <div className="questionnaireContainer">
             <div className="qTitle">Questionnaire</div>
             <div className="questions">

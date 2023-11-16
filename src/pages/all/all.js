@@ -5,11 +5,11 @@ function All(props) {
 
     const { allActivities } = props;
 
+    console.log(allActivities)
+
     if (!allActivities || allActivities.length === 0) {
         return null; 
     }
-
-    console.log(allActivities)
 
     return (
         <div className="all">

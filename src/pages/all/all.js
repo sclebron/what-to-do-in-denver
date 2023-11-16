@@ -5,7 +5,9 @@ function All(props) {
 
     const { allActivities } = props;
 
-    console.log(allActivities); 
+    if (!allActivities || allActivities.length === 0) {
+        return null; 
+    }
 
     return (
         <div className="all">

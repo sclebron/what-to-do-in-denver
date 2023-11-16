@@ -9,6 +9,8 @@ function All(props) {
         return null; 
     }
 
+    console.log(allActivities)
+
     return (
         <div className="all">
         <div className="allContainer">

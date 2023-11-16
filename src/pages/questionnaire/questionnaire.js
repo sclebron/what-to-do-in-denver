@@ -510,6 +510,8 @@ function Questionnaire() {
 
     const allActivities = []
 
+
+    //looks like it is pushing just after selecting duration and then doesn't change even when answering next questions. need to change this so it only pushes at end when all questions are answered or so it makes sure to filter and kick out ones that no longer apply when new selections are made
     const pushToAllActivities = () => {
         const filteredActivities = all.filter(activity => {
             return (

@@ -501,7 +501,8 @@ function Questionnaire() {
     const navigate = useNavigate();
 
     const navigateToAll = () => {
-        navigate('/all');
+        navigate('/all')
+        pushToAllActivities();
     }
 
     const navigateToRandom = () => {
@@ -510,11 +511,10 @@ function Questionnaire() {
 
     const allActivities = []
 
-    
+
     const pushToAllActivities = () => {
         const filteredActivities = all.filter(activity => {
             return (
-                // Check if the activity duration is selected
                 (
                 (selectedOptions.includes(1) && activity.halfDay) ||
                 (selectedOptions.includes(2) && activity.fullDay) ||
@@ -522,7 +522,6 @@ function Questionnaire() {
                 )
                 &&
 
-                // Check if the travel distance is selected
                 (
                 (selectedOptions.includes(4) && activity.inCity) ||
                 (selectedOptions.includes(5) && activity.oneHr) ||
@@ -530,14 +529,12 @@ function Questionnaire() {
                 )
                 &&
 
-                // Check if the activity type (indoor/outdoor) is selected
                 (
                 (selectedOptions.includes(7) && activity.indoors) ||
                 (selectedOptions.includes(8) && activity.outdoors)
                 )
                 &&
 
-                // Check if the season is selected
                 (
                 (selectedOptions.includes(9) && activity.winter) ||
                 (selectedOptions.includes(10) && activity.spring) ||
@@ -575,11 +572,11 @@ function Questionnaire() {
                 ))}
             </div>
             <div className="buttons">
-                    <button onClick={navigateToAll && pushToAllActivities()} className="allBtn">All Activities</button>
+                    <button onClick={navigateToAll} className="allBtn">All Activities</button>
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        <All allActivities={allActivities} style={{display: "hidden"}}/>
+        {/* <All allActivities={allActivities} style={{display: "hidden"}}/> */}
         </div>
     )
 

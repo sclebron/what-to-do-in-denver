@@ -516,24 +516,32 @@ function Questionnaire() {
         const filteredActivities = all.filter(activity => {
             return (
                 // Check if the activity duration is selected
+                (
                 (selectedOptions.includes(1) && activity.halfDay) ||
                 (selectedOptions.includes(2) && activity.fullDay) ||
-                (selectedOptions.includes(3) && activity.overnight) ||
+                (selectedOptions.includes(3) && activity.overnight)
+                )
 
                 // Check if the travel distance is selected
+                (
                 (selectedOptions.includes(4) && activity.inCity) ||
                 (selectedOptions.includes(5) && activity.oneHr) ||
-                (selectedOptions.includes(6) && activity.fewHours) ||
+                (selectedOptions.includes(6) && activity.fewHours)
+                )
 
                 // Check if the activity type (indoor/outdoor) is selected
+                (
                 (selectedOptions.includes(7) && activity.indoors) ||
-                (selectedOptions.includes(8) && activity.outdoors) ||
+                (selectedOptions.includes(8) && activity.outdoors)
+                )
 
                 // Check if the season is selected
+                (
                 (selectedOptions.includes(9) && activity.winter) ||
                 (selectedOptions.includes(10) && activity.spring) ||
                 (selectedOptions.includes(11) && activity.summer) ||
                 (selectedOptions.includes(12) && activity.fall)
+                )
             );
     });
 

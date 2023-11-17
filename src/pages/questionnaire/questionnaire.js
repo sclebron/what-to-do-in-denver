@@ -510,8 +510,7 @@ function Questionnaire() {
 
     const allActivities = []
 
-
-    //looks like it is pushing just after selecting duration and then doesn't change even when answering next questions. need to change this so it only pushes at end when all questions are answered or so it makes sure to filter and kick out ones that no longer apply when new selections are made
+    
     const pushToAllActivities = () => {
         const filteredActivities = all.filter(activity => {
             return (
@@ -521,6 +520,7 @@ function Questionnaire() {
                 (selectedOptions.includes(2) && activity.fullDay) ||
                 (selectedOptions.includes(3) && activity.overnight)
                 )
+                &&
 
                 // Check if the travel distance is selected
                 (
@@ -528,12 +528,14 @@ function Questionnaire() {
                 (selectedOptions.includes(5) && activity.oneHr) ||
                 (selectedOptions.includes(6) && activity.fewHours)
                 )
+                &&
 
                 // Check if the activity type (indoor/outdoor) is selected
                 (
                 (selectedOptions.includes(7) && activity.indoors) ||
                 (selectedOptions.includes(8) && activity.outdoors)
                 )
+                &&
 
                 // Check if the season is selected
                 (

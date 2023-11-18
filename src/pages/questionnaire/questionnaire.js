@@ -576,7 +576,7 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        {/* <All allActivities={allActivities} style={{display: "hidden"}}/> */}
+        <All allActivities={allActivities}/>
         </div>
     )
 

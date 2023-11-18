@@ -1,9 +1,7 @@
 import React from 'react';
 import './all.css';
 
-function All(props) {
-
-    const { allActivities } = props;
+function All({ allActivities }) {
 
     console.log(allActivities)
 
@@ -30,3 +28,5 @@ function All(props) {
 }
 
 export default All;
+
+//pushToAllActivities is now working, just need to figure out where to call that function and how to make the allActivities array show up on the all page and not the questionnaire page then make random page display one random activity then deploy this to github pages and then can add this project to resume

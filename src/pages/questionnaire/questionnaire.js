@@ -501,7 +501,7 @@ function Questionnaire() {
     const navigate = useNavigate();
 
     const navigateToAll = () => {
-        navigate('/all')
+        navigate('/all', { state: { allActivities } });
         pushToAllActivities();
     }
 
@@ -576,7 +576,7 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        <All allActivities={allActivities}/>
+        {/* <All allActivities={allActivities}/> */}
         </div>
     )
 

@@ -3,6 +3,8 @@ import './all.css';
 
 function All(props) {
 
+    //now it navigates to this page when select all button in questionnaire, but getting errors related to state
+
     const { allActivities } = props.location.state;
 
     console.log(allActivities)

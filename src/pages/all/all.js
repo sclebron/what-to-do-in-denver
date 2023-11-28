@@ -1,11 +1,11 @@
 import React from 'react';
 import './all.css';
 
-function All(props) {
+function All({ allActivities }) {
 
     //now it navigates to this page when select all button in questionnaire, but getting errors related to state which might mean that allActivities is undefined
 
-    const { allActivities } = props.location.state;
+    // const { allActivities } = props.location.state;
 
     console.log(allActivities)
 

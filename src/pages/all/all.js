@@ -3,7 +3,7 @@ import './all.css';
 
 function All(props) {
 
-    //now it navigates to this page when select all button in questionnaire, but getting errors related to state
+    //now it navigates to this page when select all button in questionnaire, but getting errors related to state which might mean that allActivities is undefined
 
     const { allActivities } = props.location.state;
 

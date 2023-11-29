@@ -498,18 +498,19 @@ function Questionnaire() {
         });
     };
 
+    const allActivities = [];
+
     const navigate = useNavigate();
 
     const navigateToAll = () => {
+        pushToAllActivities();
         navigate('/all', { state: { allActivities } });
-        // pushToAllActivities();
     }
 
     const navigateToRandom = () => {
         navigate('/random');
+        // pushToAllActivities();
     }
-
-    const [allActivities, setAllActivities] = useState(null);
 
 
     const pushToAllActivities = () => {

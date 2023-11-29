@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
 import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
@@ -502,7 +502,7 @@ function Questionnaire() {
 
     const navigateToAll = () => {
         navigate('/all', { state: { allActivities } });
-        pushToAllActivities();
+        // pushToAllActivities();
     }
 
     const navigateToRandom = () => {
@@ -510,14 +510,6 @@ function Questionnaire() {
     }
 
     const [allActivities, setAllActivities] = useState(null);
-
-    // useEffect(() => {
-    //     fetchAllActivities().then((data) => {
-    //         setAllActivities(data);
-    //     });
-    // }, []);
-
-    // const allActivities = []
 
 
     const pushToAllActivities = () => {

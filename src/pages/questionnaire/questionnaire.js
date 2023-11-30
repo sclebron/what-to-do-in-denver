@@ -5,6 +5,7 @@ import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front
 
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
+    const [allActivities, setAllActivities] = useState([]);
 
     const all = [
         {
@@ -498,7 +499,7 @@ function Questionnaire() {
         });
     };
 
-    const allActivities = [];
+    // const allActivities = [];
 
     const navigate = useNavigate();
 
@@ -546,6 +547,8 @@ function Questionnaire() {
     });
 
     allActivities.push(...filteredActivities);
+
+    setAllActivities(filteredActivities);
 
     console.log(allActivities);
     }

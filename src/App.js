@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import rmnp from './images/rmnp.png';
 import Homepage from './pages/homepage/homepage.js';
@@ -15,9 +15,10 @@ function App() {
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
-            {/* <Route path='/all' element={<All allActivities={allActivities} />} /> */}
+            <Route path='/all' element={<All allActivities={allActivities} />} />
             {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />} /> */}
-            {/* <Route path='/all' element={< />} /> */}
+            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.allActivities} />} /> */}
+            <Route path='/all' element={<All />} />
             <Route path='/random' element={<Random/>}/>
           </Routes>
         </Router>

@@ -8,11 +8,11 @@ import Random from './pages/random/random.js';
 import './App.css';
 
 function App() {
-  const [allActivities, setAllActivities] = useState([]);
+  // const [allActivities, setAllActivities] = useState([]);
 
-  useEffect(() => {
-    fetchAllActivities().then((data) => setAllActivities(data))
-  }, []);
+  // useEffect(() => {
+  //   fetchAllActivities().then((data) => setAllActivities(data))
+  // }, []);
 
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
-            <Route path='/all' element={<All allActivities={allActivities} />} />
+            {/* <Route path='/all' element={<All allActivities={allActivities} />} /> */}
             {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />} /> */}
             {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.allActivities} />} /> */}
             <Route path='/all' element={<All />} />

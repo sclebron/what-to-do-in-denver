@@ -8,6 +8,12 @@ import Random from './pages/random/random.js';
 import './App.css';
 
 function App() {
+  const [allActivities, setAllActivities] = useState([]);
+
+  useEffect(() => {
+    fetchAllActivities().then((data) => setAllActivities(data))
+  }, []);
+
   return (
     <div className="App">
       <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">

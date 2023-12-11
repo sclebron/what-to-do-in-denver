@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import rmnp from './images/rmnp.png';
 import Homepage from './pages/homepage/homepage.js';
@@ -8,11 +8,6 @@ import Random from './pages/random/random.js';
 import './App.css';
 
 function App() {
-  // const [allActivities, setAllActivities] = useState([]);
-
-  // useEffect(() => {
-  //   fetchAllActivities().then((data) => setAllActivities(data))
-  // }, []);
 
   return (
     <div className="App">
@@ -21,9 +16,6 @@ function App() {
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
-            {/* <Route path='/all' element={<All allActivities={allActivities} />} /> */}
-            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />} /> */}
-            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.allActivities} />} /> */}
             <Route path='/all' element={<All />} />
             <Route path='/random' element={<Random/>}/>
           </Routes>
@@ -34,3 +26,8 @@ function App() {
 }
 
 export default App;
+
+
+            {/* <Route path='/all' element={<All allActivities={allActivities} />} /> */}
+            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />} /> */}
+            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.allActivities} />} /> */}

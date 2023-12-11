@@ -579,8 +579,8 @@ function Questionnaire() {
                     <button onClick={navigateToAll} className="allBtn">All Activities</button>
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
+            <All allActivities={ allActivities } />
         </div>
-        <All allActivities={ allActivities } />
         </div>
     )
 

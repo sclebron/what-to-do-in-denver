@@ -3,7 +3,11 @@ import './all.css';
 
 function All(props) {
 
-    const { allActivities } = props.location.state;
+    // const { allActivities } = props.location.state;
+
+    // const { allActivities } = props.allActivities;
+
+    const { allActivities } = props;
 
     console.log(allActivities)
 

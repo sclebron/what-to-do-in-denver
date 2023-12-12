@@ -556,7 +556,6 @@ function Questionnaire() {
     return (
         <div className="questionnaire">
         <div className="questionnaireContainer">
-            <All allActivities={ allActivities } />
             <div className="qTitle">Questionnaire</div>
             <div className="questions">
                 {questions.map((questions) => (
@@ -580,6 +579,9 @@ function Questionnaire() {
                     <button onClick={navigateToAll} className="allBtn">All Activities</button>
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
+        <div>
+            <All allActivities={ allActivities } />
+        </div>
         </div>
         </div>
     )

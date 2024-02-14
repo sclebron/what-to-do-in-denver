@@ -16,8 +16,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
-            <Route path='/all' element={<All/>}/>
-            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
+            <Route path='/all' element={<All allActivites={allActivites}/>}/>
+            {/* <Route path='/all' element={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
             <Route path='/random' element={<Random/>}/>
           </Routes>
         </Router>
@@ -32,3 +32,4 @@ export default App;
             {/* <Route path='/all' element={<All allActivities={allActivities} />} /> */}
             {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />} /> */}
             {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.allActivities} />} /> */}
+            // <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/>

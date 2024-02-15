@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import rmnp from './images/rmnp.png';
 import Homepage from './pages/homepage/homepage.js';
@@ -7,11 +7,16 @@ import All from './pages/all/all.js';
 import Random from './pages/random/random.js';
 import './App.css';
 
-function App(props) {
+function App() {
+  const [allActivities, setAllActivities] = useState([]);
 
-  const { allActivities } = props;
+  const handleAllActivitiesChange = (newActivities) => {
+    setAllActivities(newActivities)
+  }
 
-  console.log(allActivities)
+  // const { allActivities } = props;
+
+  // console.log(allActivities)
 
   return (
     <div className="App">
@@ -19,9 +24,10 @@ function App(props) {
         <Router>
           <Routes>
             <Route path='/' element={<Homepage/>}/>
-            <Route path='/questionnaire' element={<Questionnaire/>}/>
+            <Route path='/questionnaire' element={<Questionnaire onActivitiesChange={handleAllActivitiesChange}/>}/>
+            {/* <Route path='/all' element={<All/>}/> */}
             <Route path='/all' element={<All allActivities={allActivities}/>}/>
-            {/* <Route path='/all' element={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
+            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
             <Route path='/random' element={<Random/>}/>
           </Routes>
         </Router>

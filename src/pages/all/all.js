@@ -29,6 +29,7 @@ function All(props) {
                 </li>
             ))}
         </div>
+        {/* <All allActivities={ allActivities } /> */}
         </div>
     )
 }

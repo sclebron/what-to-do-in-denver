@@ -3,7 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
 import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
 
-function Questionnaire() {
+function Questionnaire(props) {
+    const { onActivitiesChange } = props;
+
+    const handleActivitiesUpdate = () => {
+        const newActivities = onActivitiesChange(newActivities);
+    }
+
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [allActivities, setAllActivities] = useState([]);
 
@@ -505,6 +511,7 @@ function Questionnaire() {
 
     const navigateToAll = () => {
         pushToAllActivities();
+        handleActivitiesUpdate();
         navigate('/all', { state: { allActivities } });
     }
 

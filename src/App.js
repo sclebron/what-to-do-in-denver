@@ -7,7 +7,9 @@ import All from './pages/all/all.js';
 import Random from './pages/random/random.js';
 import './App.css';
 
-function App() {
+function App(props) {
+
+  const { allActivities } = props;
 
   return (
     <div className="App">
@@ -16,7 +18,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
-            <Route path='/all' element={<All allActivites={allActivites}/>}/>
+            <Route path='/all' element={<All allActivites={allActivities}/>}/>
             {/* <Route path='/all' element={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
             <Route path='/random' element={<Random/>}/>
           </Routes>

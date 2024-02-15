@@ -11,6 +11,8 @@ function App(props) {
 
   const { allActivities } = props;
 
+  console.log(allActivities)
+
   return (
     <div className="App">
       <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
@@ -18,7 +20,7 @@ function App(props) {
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
-            <Route path='/all' element={<All allActivites={allActivities}/>}/>
+            <Route path='/all' element={<All allActivities={allActivities}/>}/>
             {/* <Route path='/all' element={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
             <Route path='/random' element={<Random/>}/>
           </Routes>

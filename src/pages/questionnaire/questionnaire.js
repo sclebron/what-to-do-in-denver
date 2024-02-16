@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
 import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
 
-function Questionnaire(props) {
-    // const { onActivitiesChange } = props;
-
-    // const handleActivitiesUpdate = () => {
-    //     const newActivities = 
-    //     onActivitiesChange(newActivities);
-// }
-
+function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [allActivities, setAllActivities] = useState([]);
 
@@ -512,9 +505,52 @@ function Questionnaire(props) {
 
     const navigateToAll = () => {
         pushToAllActivities();
-        // handleActivitiesUpdate();
         navigate('/all', { state: { allActivities } });
     }
+
+    // const navigateToAll = () => {
+    //     const filteredActivities = all.filter(activity => {
+    //         return (
+    //             (
+    //             (selectedOptions.includes(1) && activity.halfDay) ||
+    //             (selectedOptions.includes(2) && activity.fullDay) ||
+    //             (selectedOptions.includes(3) && activity.overnight)
+    //             )
+    //             &&
+
+    //             (
+    //             (selectedOptions.includes(4) && activity.inCity) ||
+    //             (selectedOptions.includes(5) && activity.oneHr) ||
+    //             (selectedOptions.includes(6) && activity.fewHours)
+    //             )
+    //             &&
+
+    //             (
+    //             (selectedOptions.includes(7) && activity.indoors) ||
+    //             (selectedOptions.includes(8) && activity.outdoors)
+    //             )
+    //             &&
+
+    //             (
+    //             (selectedOptions.includes(9) && activity.winter) ||
+    //             (selectedOptions.includes(10) && activity.spring) ||
+    //             (selectedOptions.includes(11) && activity.summer) ||
+    //             (selectedOptions.includes(12) && activity.fall)
+    //             )
+    //         );
+    // });
+
+    // allActivities.push(...filteredActivities);
+
+    // setAllActivities(filteredActivities);
+
+    // console.log(allActivities);
+    // }
+
+    // useEffect(() => {
+    //     console.log(allActivities);
+    //     navigate('/all', { state: { allActivities } });
+    // }, [allActivities]);
 
     const navigateToRandom = () => {
         navigate('/random');

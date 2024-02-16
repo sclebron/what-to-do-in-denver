@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import rmnp from './images/rmnp.png';
 import Homepage from './pages/homepage/homepage.js';
@@ -8,15 +8,6 @@ import Random from './pages/random/random.js';
 import './App.css';
 
 function App() {
-  // const [allActivities, setAllActivities] = useState([]);
-
-  // const handleAllActivitiesChange = (newActivities) => {
-  //   setAllActivities(newActivities)
-  // }
-
-  // const { allActivities } = props;
-
-  // console.log(allActivities)
 
   return (
     <div className="App">

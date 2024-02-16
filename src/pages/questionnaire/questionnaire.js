@@ -4,11 +4,12 @@ import './questionnaire.css';
 import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front/src/pages/all/all.js';
 
 function Questionnaire(props) {
-    const { onActivitiesChange } = props;
+    // const { onActivitiesChange } = props;
 
-    const handleActivitiesUpdate = () => {
-        const newActivities = onActivitiesChange(newActivities);
-    }
+    // const handleActivitiesUpdate = () => {
+    //     const newActivities = 
+    //     onActivitiesChange(newActivities);
+// }
 
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [allActivities, setAllActivities] = useState([]);
@@ -511,7 +512,7 @@ function Questionnaire(props) {
 
     const navigateToAll = () => {
         pushToAllActivities();
-        handleActivitiesUpdate();
+        // handleActivitiesUpdate();
         navigate('/all', { state: { allActivities } });
     }
 

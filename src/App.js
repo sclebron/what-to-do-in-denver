@@ -8,11 +8,11 @@ import Random from './pages/random/random.js';
 import './App.css';
 
 function App() {
-  const [allActivities, setAllActivities] = useState([]);
+  // const [allActivities, setAllActivities] = useState([]);
 
-  const handleAllActivitiesChange = (newActivities) => {
-    setAllActivities(newActivities)
-  }
+  // const handleAllActivitiesChange = (newActivities) => {
+  //   setAllActivities(newActivities)
+  // }
 
   // const { allActivities } = props;
 
@@ -24,10 +24,8 @@ function App() {
         <Router>
           <Routes>
             <Route path='/' element={<Homepage/>}/>
-            <Route path='/questionnaire' element={<Questionnaire onActivitiesChange={handleAllActivitiesChange}/>}/>
-            {/* <Route path='/all' element={<All/>}/> */}
-            <Route path='/all' element={<All allActivities={allActivities}/>}/>
-            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/> */}
+            <Route path='/questionnaire' element={<Questionnaire/>}/>
+            <Route path='/all' element={<All/>}/>
             <Route path='/random' element={<Random/>}/>
           </Routes>
         </Router>
@@ -38,8 +36,3 @@ function App() {
 
 export default App;
 
-
-            {/* <Route path='/all' element={<All allActivities={allActivities} />} /> */}
-            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />} /> */}
-            {/* <Route path='/all' render={(props) => <All {...props} allActivities={props.allActivities} />} /> */}
-            // <Route path='/all' render={(props) => <All {...props} allActivities={props.location.state.allActivities} />}/>

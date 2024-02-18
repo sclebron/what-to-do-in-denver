@@ -35,7 +35,7 @@ function Questionnaire() {
             "description": "Learn about everything from dinosaurs to astronomy at the Denver Museum of Nature & Science!",
             "details": "The Denver Museum of Nature & Science is located in City Park, near the Denve Zoo. Tickets can be purchased online prior to visiting the museum.",
             "webUrl": "https://www.dmns.org/",
-            "halfday": true,
+            "halfDay": true,
             "fullDay": false,
             "overnight": false,
             "inCity": true,
@@ -499,8 +499,6 @@ function Questionnaire() {
         });
     };
 
-    // const allActivities = [];
-
     const navigate = useNavigate();
 
     const navigateToAll = () => {
@@ -509,46 +507,10 @@ function Questionnaire() {
     }
 
     // const navigateToAll = () => {
-    //     const filteredActivities = all.filter(activity => {
-    //         return (
-    //             (
-    //             (selectedOptions.includes(1) && activity.halfDay) ||
-    //             (selectedOptions.includes(2) && activity.fullDay) ||
-    //             (selectedOptions.includes(3) && activity.overnight)
-    //             )
-    //             &&
-
-    //             (
-    //             (selectedOptions.includes(4) && activity.inCity) ||
-    //             (selectedOptions.includes(5) && activity.oneHr) ||
-    //             (selectedOptions.includes(6) && activity.fewHours)
-    //             )
-    //             &&
-
-    //             (
-    //             (selectedOptions.includes(7) && activity.indoors) ||
-    //             (selectedOptions.includes(8) && activity.outdoors)
-    //             )
-    //             &&
-
-    //             (
-    //             (selectedOptions.includes(9) && activity.winter) ||
-    //             (selectedOptions.includes(10) && activity.spring) ||
-    //             (selectedOptions.includes(11) && activity.summer) ||
-    //             (selectedOptions.includes(12) && activity.fall)
-    //             )
-    //         );
-    // });
-
-    // allActivities.push(...filteredActivities);
-
-    // setAllActivities(filteredActivities);
-
-    // console.log(allActivities);
-    // }
+    //     pushToAllActivities();
+    // };
 
     // useEffect(() => {
-    //     console.log(allActivities);
     //     navigate('/all', { state: { allActivities } });
     // }, [allActivities]);
 
@@ -595,6 +557,7 @@ function Questionnaire() {
     setAllActivities(filteredActivities);
 
     console.log(allActivities);
+    console.log(filteredActivities);
     }
 
     return (

@@ -499,27 +499,6 @@ function Questionnaire() {
         });
     };
 
-    const navigate = useNavigate();
-
-    const navigateToAll = () => {
-        pushToAllActivities();
-        navigate('/all', { state: { allActivities } });
-    }
-
-    // const navigateToAll = () => {
-    //     pushToAllActivities();
-    // };
-
-    // useEffect(() => {
-    //     navigate('/all', { state: { allActivities } });
-    // }, [allActivities]);
-
-    const navigateToRandom = () => {
-        navigate('/random');
-        // pushToAllActivities();
-    }
-
-
     const pushToAllActivities = () => {
         const filteredActivities = all.filter(activity => {
             return (
@@ -558,6 +537,35 @@ function Questionnaire() {
 
     console.log(allActivities);
     console.log(filteredActivities);
+    }
+
+    useEffect(() => {
+        window.localStorage.setItem('ALLACTIVITIES_STATE', JSON.stringify(allActivities))
+    }, [allActivities]);
+
+    useEffect(() => {
+        const data = window.localStorage.getItem('ALLACTIVITIES_STATE');
+        if (data !== null) setAllActivities(JSON.parse(data));
+    }, []);
+
+    const navigate = useNavigate();
+
+    const navigateToAll = () => {
+        pushToAllActivities();
+        navigate('/all', { state: { allActivities } });
+    }
+
+    // const navigateToAll = () => {
+    //     pushToAllActivities();
+    // };
+
+    // useEffect(() => {
+    //     navigate('/all', { state: { allActivities } });
+    // }, [allActivities]);
+
+    const navigateToRandom = () => {
+        navigate('/random');
+        // pushToAllActivities();
     }
 
     return (

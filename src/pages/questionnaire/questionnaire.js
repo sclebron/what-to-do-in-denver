@@ -6,6 +6,7 @@ import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-front
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [allActivities, setAllActivities] = useState([]);
+    const navigate = useNavigate();
 
     const all = [
         {
@@ -537,31 +538,30 @@ function Questionnaire() {
 
     console.log(allActivities);
     console.log(filteredActivities);
+
+    // filteredActivitiesRef.current = newFilteredActivities;
+    // allActivitiesRef.current = newFilteredActivities;
+
+    // console.log(allActivitiesRef.current);
+    // console.log(newFilteredActivities);
     }
 
-    useEffect(() => {
-        window.localStorage.setItem('ALLACTIVITIES_STATE', JSON.stringify(allActivities))
-    }, [allActivities]);
+    // useEffect(() => {
+    //     const saveToLocalStorage = () => {
+    //         window.localStorage.setItem('ALLACTIVITIES_STATE', JSON.stringify(allActivities));
+    //     };
+    //     saveToLocalStorage();
+    // }, [allActivities]);
 
-    useEffect(() => {
-        const data = window.localStorage.getItem('ALLACTIVITIES_STATE');
-        if (data !== null) setAllActivities(JSON.parse(data));
-    }, []);
-
-    const navigate = useNavigate();
+    // useEffect(() => {
+    //     const data = window.localStorage.getItem('ALLACTIVITIES_STATE');
+    //     if (data !== null) setAllActivities(JSON.parse(data));
+    // }, []);
 
     const navigateToAll = () => {
         pushToAllActivities();
-        navigate('/all', { state: { allActivities } });
+        navigate('/all', { state: { selectedOptions, allActivities } });
     }
-
-    // const navigateToAll = () => {
-    //     pushToAllActivities();
-    // };
-
-    // useEffect(() => {
-    //     navigate('/all', { state: { allActivities } });
-    // }, [allActivities]);
 
     const navigateToRandom = () => {
         navigate('/random');
@@ -596,6 +596,7 @@ function Questionnaire() {
             </div>
         </div>
         <All allActivities={ allActivities } />
+        <All selectedOptions={ selectedOptions } />
         </div>
     )
 

@@ -1,8 +1,10 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './all.css';
 
-function All(props) {
-    const { allActivities } = props;
+function All() {
+    const location = useLocation();
+    const { selectedOptions, allActivities } = location.state || {};
 
     console.log(allActivities)
 

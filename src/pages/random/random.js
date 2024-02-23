@@ -12,7 +12,7 @@ function Random() {
         return null; 
     }
 
-        let random = allActivities[ (Math.floor(Math.random() * allActivities.length))];
+    let random = allActivities[ (Math.floor(Math.random() * allActivities.length))];
 
     return (
         <div className="random">

@@ -6,7 +6,6 @@ import Questionnaire from './pages/questionnaire/questionnaire.js';
 import All from './pages/all/all.js';
 import Random from './pages/random/random.js';
 import './App.css';
-import './index.css';
 
 function App() {
 
@@ -15,7 +14,7 @@ function App() {
       <div style={{ backgroundImage: `url(${rmnp})` }} className="backgroundImg">
         <Router>
           <Routes>
-            <Route path='/' element={<Homepage/>}/>
+            <Route path='/what-to-do-in-denver/' element={<Homepage/>}/>
             <Route path='/questionnaire' element={<Questionnaire/>}/>
             <Route path='/all' element={<All/>}/>
             <Route path='/random' element={<Random/>}/>

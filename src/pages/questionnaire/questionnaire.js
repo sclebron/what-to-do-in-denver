@@ -452,7 +452,7 @@ function Questionnaire() {
         {
         id: 22,
             "title": "Go to Cherry Creek Dog Off Leash Area",
-            "image": "https://www.imghippo.com/i/se9yD1708896014.pdf",
+            "image": "https://i.imghippo.com/files/se9yD1708896014.pdf",
             "description": "Enjoy the day running and splashing around with your pooch!",
             "details": "Located in Cherry Creek State Park, this 107 acre area is the perfect spot to let your dog run and play. Day passes can be purchased at the entrance, as well as year passes.",
             "webUrl": "https://cpw.state.co.us/placestogo/parks/CherryCreek/Pages/DogOff-LeashArea.aspx",

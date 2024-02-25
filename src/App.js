@@ -6,6 +6,7 @@ import Questionnaire from './pages/questionnaire/questionnaire.js';
 import All from './pages/all/all.js';
 import Random from './pages/random/random.js';
 import './App.css';
+import './index.css';
 
 function App() {
 

@@ -469,6 +469,26 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 23,
+            "title": "Go Horseback Riding at 12 Mile Stables",
+            "image": "https://i.ytimg.com/vi/rnDGyGGQXww/sddefault.jpg",
+            "description": "Spend an afternoon horseback riding through Cherry Creek State Park.",
+            "details": "Choose from the 1 hour Prairie Ride, 1.5 hour Stream Crossing Ride, 2 hour Cowboy Ride and Sunset and Dinner Rides. Visit their website to make a reservation!",
+            "webUrl": "https://www.horserentalsdenver.com/horse-rentals",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": true,
+            "oneHr": false,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

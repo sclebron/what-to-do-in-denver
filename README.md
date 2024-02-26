@@ -1,9 +1,8 @@
-<h1 align='center'>What To Do In...</h1>
+<h1 align='center'>What To Do In Denver</h1>
 
 ## Table of Contents
 
 - [Description](#description)
-- [Installation](#installation)
 - [User Story](#user_story)
 - [Usage](#usage)
 - [Contributors](#contributors)
@@ -12,10 +11,7 @@
 
 ## Description
 
-This is an app to give users ideas on activities to do in or near their city. Users can either view many activities to do in their city based on certain criteria, or have one random activity generated for them.
-
-## Installation
-
+This is an app to give users ideas on activities to do in or near Denver. Users can either view many activities to do in their city based on certain criteria, or have one random activity generated for them.
 
 
 ## User Story
@@ -32,7 +28,7 @@ Sophie LeBron
 
 ## Github
 
-https://github.com/sclebron/what-to-do-in
+https://github.com/sclebron/what-to-do-in-denver
 
 ## Deployed Link
 

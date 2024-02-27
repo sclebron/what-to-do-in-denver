@@ -569,6 +569,26 @@ function Questionnaire() {
             "summer": false,
             "fall": false,
         },
+        {
+            id: 28,
+            "title": "Ski at Arapahoe Basin",
+            "image": "https://www.coloradoski.com/wp-content/uploads/2022/09/arapahoe-basin-skier.jpeg",
+            "description": "Spend the day skiing at this ski area perfect for intermediate and advanced skiers.",
+            "details": "Araphoe Basin is a ski area located 60 miles west of Denver. Lift tickets can be purchased online, at the mountain, or you can use an Ikon pass if you have one!",
+            "webUrl": "https://www.arapahoebasin.com/",
+            "halfDay": true,
+            "fullDay": true,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": false,
+            "summer": false,
+            "fall": false,
+        },
     ];
 
     const questions = [

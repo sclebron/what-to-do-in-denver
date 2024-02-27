@@ -549,6 +549,26 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 27,
+            "title": "Dog Sledding at Mountain Musher",
+            "image": "https://www.mountainmusher.com/images/gallery/IMG_9835.JPG",
+            "description": "Ride a sled pulled by a team of huskies through the mountains in Eagle County.",
+            "details": "Choose either the morning or afternoon tour. 1-2 people per sled, which is pulled by a team of huskies for 5 miles on a private trail. Reservations can be made by visiting their website.",
+            "webUrl": "https://www.mountainmusher.com/index.php",
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": false,
+            "fewHours": true,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": false,
+            "summer": false,
+            "fall": false,
+        },
     ];
 
     const questions = [

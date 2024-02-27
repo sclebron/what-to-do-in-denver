@@ -529,6 +529,26 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 26,
+            "title": "Go to Glenwood Hot Springs Resort",
+            "image": "https://hanginglake.com/wp-content/uploads/2023/11/ec87249fa4e2e17ac5ffac374426639e8a859583-2-2048x1399.jpg",
+            "description": "Relax in the hot springs and maybe stay the night at this beautiful hot springs resort.",
+            "details": "Located 150 miles outside of Denver (and just 40 miles outside of Aspen), the Glenwood Hot Springs Resort is the perfect place for a quick getaway. You can visit their website to reserve pool passes, hotel rooms, and packages.",
+            "webUrl": "https://www.hotspringspool.com/",
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": true,
+            "inCity": false,
+            "oneHr": false,
+            "fewHours": true,
+            "indoors": true,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

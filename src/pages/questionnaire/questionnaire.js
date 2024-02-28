@@ -609,6 +609,26 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 30,
+            "title": "Terror in the Corn",
+            "image": "https://terrorinthecorn.com/wp-content/uploads/2019/03/terror-in-the-corn-mobile-1.jpg",
+            "description": "Visit this spooky mile long haunted corn maze during the Halloween season, or visit Anderson Farms during the day for their Fall Festival!",
+            "details": "",
+            "webUrl": "https://terrorinthecorn.com/",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": false,
+            "summer": false,
+            "fall": true,
+        },
     ];
 
     const questions = [

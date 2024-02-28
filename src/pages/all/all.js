@@ -10,11 +10,14 @@ function All() {
     // console.log(allActivities)
 
     if (!allActivities || allActivities.length === 0) {
-        activitiesExist = false;
-        // return null; 
-    } else {
-        activitiesExist = true;
-    }
+        return null; 
+    } 
+
+    // if (allActivities.length === 0) {
+    //     activitiesExist = false;
+    // } else {
+    //     activitiesExist = true;
+    // }
 
     console.log(activitiesExist);
 

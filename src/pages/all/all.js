@@ -5,12 +5,18 @@ import './all.css';
 function All() {
     const location = useLocation();
     const { selectedOptions, allActivities } = location.state || {};
+    let activitiesExist;
 
-    console.log(allActivities)
+    // console.log(allActivities)
 
     if (!allActivities || allActivities.length === 0) {
-        return null; 
+        activitiesExist = false;
+        // return null; 
+    } else {
+        activitiesExist = true;
     }
+
+    console.log(activitiesExist);
 
 
     if (activitiesExist) {
@@ -30,14 +36,15 @@ function All() {
         </div>
         </div>
     )
-    }
+    } else {
     return (
         <div className="all">
-            <div className="message">
+            <div className="no-activities">
                 <p>I'm sorry, no activities match your selections</p>
             </div>
         </div>
     )
+    }
 }
 
 export default All;

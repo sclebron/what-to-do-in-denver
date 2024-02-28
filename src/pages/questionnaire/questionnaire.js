@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './questionnaire.css';
 import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-denver/src/pages/all/all.js';
@@ -698,25 +698,7 @@ function Questionnaire() {
 
     console.log(allActivities);
     console.log(filteredActivities);
-
-    // filteredActivitiesRef.current = newFilteredActivities;
-    // allActivitiesRef.current = newFilteredActivities;
-
-    // console.log(allActivitiesRef.current);
-    // console.log(newFilteredActivities);
     }
-
-    // useEffect(() => {
-    //     const saveToLocalStorage = () => {
-    //         window.localStorage.setItem('ALLACTIVITIES_STATE', JSON.stringify(allActivities));
-    //     };
-    //     saveToLocalStorage();
-    // }, [allActivities]);
-
-    // useEffect(() => {
-    //     const data = window.localStorage.getItem('ALLACTIVITIES_STATE');
-    //     if (data !== null) setAllActivities(JSON.parse(data));
-    // }, []);
 
     const navigateToAll = () => {
         pushToAllActivities();

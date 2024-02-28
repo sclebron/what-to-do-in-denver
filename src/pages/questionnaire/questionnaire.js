@@ -593,7 +593,7 @@ function Questionnaire() {
             id: 29,
             "title": "Summit Mount Bierstadt",
             "image": "https://bearfoottheory.com/wp-content/uploads/2021/06/Mount-Bierstadt-Colorado-14er.jpeg",
-            "description": "",
+            "description": "A great beginner (but still challenging!) hike for those who are looking to tackle their first 14er.",
             "details": "",
             "webUrl": "",
             "halfDay": true,

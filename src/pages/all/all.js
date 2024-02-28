@@ -12,7 +12,9 @@ function All() {
         return null; 
     }
 
-    return (
+
+    if (activitiesExist) {
+    return ( 
         <div className="all">
         <div className="allContainer">
         {allActivities?.map((activity) => (
@@ -26,6 +28,14 @@ function All() {
                 </div>
             ))}
         </div>
+        </div>
+    )
+    }
+    return (
+        <div className="all">
+            <div className="message">
+                <p>I'm sorry, no activities match your selections</p>
+            </div>
         </div>
     )
 }

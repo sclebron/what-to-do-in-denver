@@ -22,7 +22,7 @@ function All() {
     console.log(activitiesExist);
 
 
-    if (activitiesExist) {
+    // if (activitiesExist) {
     return ( 
         <div className="all">
         <div className="allContainer">
@@ -39,15 +39,15 @@ function All() {
         </div>
         </div>
     )
-    } else {
-    return (
-        <div className="all">
-            <div className="no-activities">
-                <p>I'm sorry, no activities match your selections</p>
-            </div>
-        </div>
-    )
-    }
+    // } else {
+    // return (
+    //     <div className="all">
+    //         <div className="no-activities">
+    //             <p>I'm sorry, no activities match your selections</p>
+    //         </div>
+    //     </div>
+    // )
+    // }
 }
 
 export default All;

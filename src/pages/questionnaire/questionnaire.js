@@ -712,6 +712,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 36,
+            "title": "Ski at Eldora",
+            "image": "https://www.eldora.com/_gatsby/image/2d393c95cc8f3ca329af2c72ecc9b498/bdc403eda6842382158698ab1a77c7a7/New223_NewHome_10.23.webp?u=https%3A%2F%2Fcms.eldora.com%2Fsites%2Fdefault%2Ffiles%2F2023-10%2FNew223_NewHome_10.23.jpg&a=w%3D960%26h%3D456%26fm%3Dwebp%26q%3D90&cd=9369667a1a76c1ac4eb7c88ad91d22c3",
+            "description": "Not far outside of Boulder, Eldora is a great mountain for a quick day trip!",
+            "webUrl": "https://www.eldora.com/",
+            "halfDay": true,
+            "fullDay": true,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": false,
+            "summer": false,
+            "fall": false,
+        },
     ];
 
     const questions = [

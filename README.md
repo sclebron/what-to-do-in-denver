@@ -11,16 +11,7 @@
 
 ## Description
 
-This is an app to give users ideas on activities to do in or near Denver. Users can either view many activities to do in their city based on certain criteria, or have one random activity generated for them.
-
-
-## User Story
-
-
-
-## Usage
-
-
+This is an app to give users ideas on activities to do in or near Denver. The user selects options in a questionnaire related to what type of activity they want to do. Users can then either view many activities to do in their city based on their selections, or have one random activity generated for them.
 
 ## Contributors 
 
@@ -31,4 +22,6 @@ Sophie LeBron
 https://github.com/sclebron/what-to-do-in-denver
 
 ## Deployed Link
+
+https://sclebron.github.io/what-to-do-in-denver/
 

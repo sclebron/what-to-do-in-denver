@@ -693,6 +693,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 35,
+            "title": "Go to Denver Botanic Gardens",
+            "image": "https://img1.10bestmedia.com/Images/Photos/389658/Botanic-Gardens-Pond-Pavilion-LR_55_660x440.jpg",
+            "description": "Spend a morning or afternoon exploring 23 acres of beautiful gardens!",
+            "webUrl": "https://www.botanicgardens.org/",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": true,
+            "oneHr": false,
+            "fewHours": false,
+            "indoors": true,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

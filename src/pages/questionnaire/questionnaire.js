@@ -734,7 +734,7 @@ function Questionnaire() {
         {
             id: 37,
             "title": "Hike Arthur's Rock Trail",
-            "image": "https://i.ibb.co/RzNx6N1/arthursrock.jpg",
+            "image": "https://cdn.backpacker.com/wp-content/uploads/2013/09/arthurs-rock.jpg?width=730",
             "description": "Head to Lory State Park for this beautiful out and back hike.",
             "webUrl": "https://www.alltrails.com/trail/us/colorado/arthurs-rock",
             "halfDay": true,

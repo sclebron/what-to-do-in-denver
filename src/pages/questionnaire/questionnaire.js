@@ -788,6 +788,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 40,
+            "title": "Hike To Saint Mary's Glacier",
+            "image": "https://www.foxintheforest.net/wp-content/uploads/2022/01/iStock-1294952554.jpg",
+            "description": "This short hike near Idaho Springs offers beautiful views of the Rocky Mountains and Saint Mary's Glacier and Lake.",
+            "webUrl": "https://www.alltrails.com/trail/us/colorado/st-mary-s-glacier",
+            "halfDay": true,
+            "fullDay": true,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

@@ -864,6 +864,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 44,
+            "title": "Camp at Cold Springs Campground",
+            "image": "https://savageventures.b-cdn.net/wp-content/uploads/2016/06/stelprdb5183583.jpg",
+            "description": "Go camping at Cold Springs Campground, located outside of Idaho Springs. There are hiking trails and fishing spots nearby.",
+            "webUrl": "https://www.fs.usda.gov/recarea/arp/recarea/?recid=28410",
+            "halfDay": false,
+            "fullDay": false,
+            "overnight": true,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

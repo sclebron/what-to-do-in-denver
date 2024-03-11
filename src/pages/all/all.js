@@ -9,20 +9,20 @@ function All() {
 
     // console.log(allActivities)
 
-    if (!allActivities || allActivities.length === 0) {
-        return null; 
-    } 
+    // if (!allActivities || allActivities.length === 0) {
+    //     return null; 
+    // } 
 
-    // if (allActivities.length === 0) {
-    //     activitiesExist = false;
-    // } else {
-    //     activitiesExist = true;
-    // }
+    if (!allActivities || allActivities.length === 0) {
+        activitiesExist = false;
+    } else {
+        activitiesExist = true;
+    }
 
     console.log(activitiesExist);
 
 
-    // if (activitiesExist) {
+    if (activitiesExist) {
     return ( 
         <div className="all">
         <div className="allContainer">
@@ -39,15 +39,15 @@ function All() {
         </div>
         </div>
     )
-    // } else {
-    // return (
-    //     <div className="all">
-    //         <div className="no-activities">
-    //             <p>I'm sorry, no activities match your selections</p>
-    //         </div>
-    //     </div>
-    // )
-    // }
+    } else {
+    return (
+        <div className="all">
+            <div className="no-activities">
+                <p>I'm sorry, no activities match your selections</p>
+            </div>
+        </div>
+    )
+    }
 }
 
 export default All;

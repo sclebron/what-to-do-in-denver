@@ -980,8 +980,8 @@ function Questionnaire() {
     }
 
     const navigateToRandom = () => {
-        navigate('/random');
-        // pushToAllActivities();
+        pushToAllActivities();
+        navigate('/random', { state: { selectedOptions, allActivities } });
     }
 
     return (
@@ -1011,7 +1011,7 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        <All allActivities={ allActivities } />
+        <All allActivities={ allActivities } id="all-q"/>
         <All selectedOptions={ selectedOptions } />
         </div>
     )

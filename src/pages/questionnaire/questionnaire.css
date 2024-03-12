@@ -68,3 +68,7 @@
     background-color: black;
     cursor: pointer;
 }
+
+.all-q {
+    visibility: hidden;
+}

@@ -6,6 +6,7 @@ import All from '/Users/sophielebron/Desktop/coding-projects/what-to-do-in-denve
 function Questionnaire() {
     const [selectedOptions, setSelectedOptions] = useState([]);
     const [allActivities, setAllActivities] = useState([]);
+    const [showActivities, setShowActivities] = useState(false);
     const navigate = useNavigate();
 
     const all = [
@@ -976,11 +977,13 @@ function Questionnaire() {
 
     const navigateToAll = () => {
         pushToAllActivities();
+        setShowActivities(true);
         navigate('/all', { state: { selectedOptions, allActivities } });
     }
 
     const navigateToRandom = () => {
         pushToAllActivities();
+        setShowActivities(true);
         navigate('/random', { state: { selectedOptions, allActivities } });
     }
 
@@ -1011,8 +1014,8 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        <All allActivities={ allActivities } id="all-q"/>
-        <All selectedOptions={ selectedOptions } />
+        {showActivities && <All allActivities={ allActivities } id="all-q"/>}
+        {showActivities && <All selectedOptions={ selectedOptions } />}
         </div>
     )
 

@@ -1014,7 +1014,7 @@ function Questionnaire() {
                     <button onClick={navigateToRandom} className="randomBtn">Random Activity</button>
             </div>
         </div>
-        {showActivities && <All allActivities={ allActivities } id="all-q"/>}
+        {showActivities && <All allActivities={ allActivities } />}
         {showActivities && <All selectedOptions={ selectedOptions } />}
         </div>
     )

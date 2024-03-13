@@ -5,15 +5,23 @@ import './random.css';
 function Random() {
     const location = useLocation();
     const { selectedOptions, allActivities } = location.state || {};
+    let activitiesExist;
 
-    console.log(allActivities)
+    // console.log(allActivities)
+
+    // if (!allActivities || allActivities.length === 0) {
+    //     return null; 
+    // }
 
     if (!allActivities || allActivities.length === 0) {
-        return null; 
+        activitiesExist = false;
+    } else {
+        activitiesExist = true;
     }
 
     let random = allActivities[ (Math.floor(Math.random() * allActivities.length))];
 
+    if (activitiesExist) {
     return (
         <div className="random">
         <div className="randomContainer">
@@ -30,6 +38,15 @@ function Random() {
         </div>
         </div>
     )
+    } else {
+    return (
+        <div className="random">
+            <div className="no-activities">
+                <p>I'm sorry, no activities match your selections</p>
+            </div>
+        </div>
+    )
+    }
 }
 
 export default Random;

@@ -7,19 +7,15 @@ function Random() {
     const { selectedOptions, allActivities } = location.state || {};
     let activitiesExist;
 
-    // console.log(allActivities)
-
-    // if (!allActivities || allActivities.length === 0) {
-    //     return null; 
-    // }
-
     if (!allActivities || allActivities.length === 0) {
         activitiesExist = false;
     } else {
         activitiesExist = true;
     }
 
-    let random = allActivities[ (Math.floor(Math.random() * allActivities.length))];
+    let random = [allActivities[ (Math.floor(Math.random() * allActivities.length))]];
+
+    console.log(random);
 
     if (activitiesExist) {
     return (

@@ -7,12 +7,6 @@ function All() {
     const { selectedOptions, allActivities } = location.state || {};
     let activitiesExist;
 
-    // console.log(allActivities)
-
-    // if (!allActivities || allActivities.length === 0) {
-    //     return null; 
-    // } 
-
     if (!allActivities || allActivities.length === 0) {
         activitiesExist = false;
     } else {

@@ -4,7 +4,7 @@
 }
 
 .randomContainer {
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 365px;
     padding-top: 3vh;
     padding-left: 5vh;
@@ -12,7 +12,7 @@
     padding-bottom: 5vh;
     border: solid 7px black;
     background-color: white;
-    height: 80vh;
+    height: 70vh;
 }
 
 .randomTitle {

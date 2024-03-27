@@ -27,9 +27,20 @@ describe('what-to-do-in-denver', () => {
         cy.url().should('eq', 'https://sclebron.github.io/questionnaire')
     })
 
+})
+
+describe('what-to-do-in-denver-questionnaire', () => {
+    beforeEach(() => {
+        cy.visit('https://sclebron.github.io/questionnaire')
+    })
+
     //questionnaire should display on questionnaire page
+    it('questionnaire should display', () => {
+        cy.get()
+    })
     //when user selects option on questionnaire it should become checked
     //when user clicks again on option it should become unchecked
     //all activities button should redirect to all page
     //random activities button should redirect to random page
+
 })

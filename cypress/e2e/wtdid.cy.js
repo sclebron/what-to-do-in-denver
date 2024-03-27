@@ -27,4 +27,8 @@ describe('what-to-do-in-denver', () => {
         cy.url().should('eq', 'https://sclebron.github.io/questionnaire')
     })
 
+    //questionnaire should display on questionnaire page
+    //when user selects option on questionnaire it should become checked
+    //all activities button should redirect to all page
+    //random activities button should redirect to random page
 })

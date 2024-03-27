@@ -21,6 +21,10 @@ describe('what-to-do-in-denver', () => {
     })
 
     //questionnaire button should redirect to questionnaire page
+    it('clicking on questionnaire button redirects to questionnaire page', () => {
+        cy.get('questionnaireBtn').click()
 
+        cy.url().should('eq', 'https://sclebron.github.io/questionnaire')
+    })
 
 })

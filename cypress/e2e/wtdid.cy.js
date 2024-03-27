@@ -45,3 +45,7 @@ describe('what-to-do-in-denver-questionnaire', () => {
     //random activities button should redirect to random page
 
 })
+
+//all activities container should be visible
+
+//random activities container should be visible

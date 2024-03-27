@@ -29,6 +29,7 @@ describe('what-to-do-in-denver', () => {
 
     //questionnaire should display on questionnaire page
     //when user selects option on questionnaire it should become checked
+    //when user clicks again on option it should become unchecked
     //all activities button should redirect to all page
     //random activities button should redirect to random page
 })

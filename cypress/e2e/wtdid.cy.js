@@ -7,7 +7,7 @@ describe('what-to-do-in-denver', () => {
 
     //should have backgroundimage
     it('displays background image', () => {
-        cy.get('')
+        cy.get('backgroundImg').should('be.visible')
     })
 
     //should display header

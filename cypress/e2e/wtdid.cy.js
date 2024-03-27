@@ -36,8 +36,9 @@ describe('what-to-do-in-denver-questionnaire', () => {
 
     //questionnaire should display on questionnaire page
     it('questionnaire should display', () => {
-        cy.get()
+        cy.get('.questionnaireContainer').should('be.visible')
     })
+
     //when user selects option on questionnaire it should become checked
     //when user clicks again on option it should become unchecked
     //all activities button should redirect to all page

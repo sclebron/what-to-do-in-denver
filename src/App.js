@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import rmnp from './images/rmnp.png';
-import rmnp from './images/rmnp3.png';
+import rmnp from './images/rmnp.png';
 import Homepage from './pages/homepage/homepage.js';
 import Questionnaire from './pages/questionnaire/questionnaire.js';
 import All from './pages/all/all.js';

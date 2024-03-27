@@ -3,8 +3,6 @@
 ## Table of Contents
 
 - [Description](#description)
-- [User Story](#user_story)
-- [Usage](#usage)
 - [Contributors](#contributors)
 - [Github](#github)
 - [Deployed Link](#deployed_link)

@@ -40,9 +40,24 @@ describe('what-to-do-in-denver-questionnaire', () => {
     })
 
     //when user selects option on questionnaire it should become checked
+    it('option gets checked after user clicks', () => {
+
+    })
+
     //when user clicks again on option it should become unchecked
+    it('option unchecks when user clicks a second time', () => {
+
+    })
+
     //all activities button should redirect to all page
+    it('all activities button redirects to all page', () => {
+
+    })
+
     //random activities button should redirect to random page
+    it('random activity button redirects to random page', () => {
+        
+    })
 
 })
 

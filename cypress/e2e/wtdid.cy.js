@@ -40,23 +40,27 @@ describe('what-to-do-in-denver-questionnaire', () => {
     })
 
     //when user selects option on questionnaire it should become checked
-    it('option gets checked after user clicks', () => {
-        
+    it('selectbox gets checked after user clicks', () => {
+        cy.get('.options input[type="checkbox').first().check().should('be.checked')
     })
 
     //when user clicks again on option it should become unchecked
     it('option unchecks when user clicks a second time', () => {
-
+        cy.get('.options input[type="checkbox').first().uncheck().should('not.be.checked')
     })
 
     //all activities button should redirect to all page
-    it('all activities button redirects to all page', () => {
+    it('clicking on all activities button redirects to all page', () => {
+        cy.get('allBtn').click()
 
+        cy.url().should('eq', 'https://sclebron.github.io/all')
     })
 
     //random activities button should redirect to random page
-    it('random activity button redirects to random page', () => {
+    it('clicking on random activity button redirects to random page', () => {
+        cy.get('randomBtn').click()
 
+        cy.url().should('eq', 'https://sclebron.github.io/random')
     })
 
 })

@@ -5,22 +5,22 @@ describe('what-to-do-in-denver', () => {
         cy.visit('https://sclebron.github.io/what-to-do-in-denver/')
     })
 
-    //should have backgroundimage
+    //should have backgroundimage - X
     it('displays background image', () => {
         cy.get('backgroundImg').should('be.visible')
     })
 
-    //should display header
+    //should display header - :)
     it('displays header on homepage', () => {
         cy.get('.header').should('be.visible')
     })
 
-    //should display questionnaire button
+    //should display questionnaire button - :)
     it('displays questionnaire button', () => {
         cy.get('.questionnaireBtn').should('be.visible');
     })
 
-    //questionnaire button should redirect to questionnaire page
+    //questionnaire button should redirect to questionnaire page - X
     it('clicking on questionnaire button redirects to questionnaire page', () => {
         cy.get('questionnaireBtn').click()
 
@@ -34,7 +34,7 @@ describe('what-to-do-in-denver-questionnaire', () => {
         cy.visit('https://sclebron.github.io/questionnaire')
     })
 
-    //questionnaire should display on questionnaire page
+    //questionnaire should display on questionnaire page - X
     it('questionnaire should display', () => {
         cy.get('.questionnaireContainer').should('be.visible')
     })

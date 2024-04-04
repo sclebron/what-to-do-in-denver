@@ -65,6 +65,12 @@ describe('what-to-do-in-denver-questionnaire', () => {
 
 })
 
+describe('what-to-do-in-denver-all', () => {
+    beforeEach(() => {
+        cy.visit('https://sclebron.github.io/all')
+    })
+})
+
 //all activities container should be visible
 
 //random activities container should be visible

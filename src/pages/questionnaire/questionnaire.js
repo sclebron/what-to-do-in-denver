@@ -960,7 +960,15 @@ function Questionnaire() {
                 { id: 11, label: "Summer" },
                 { id: 12, label: "Fall" },
             ],
-        }
+        },
+        // {
+        //     id: 4,
+        //     question: "Would you like the activity to be dog friendly?",
+        //     options: [
+        //         { id: 13, label: "Yes" },
+        //         { id: 14, label: "No" },
+        //     ],
+        // },
     ]
 
     const handleCheckboxChange = (optionId) => {

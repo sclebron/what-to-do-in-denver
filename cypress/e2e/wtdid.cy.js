@@ -20,7 +20,7 @@ describe('what-to-do-in-denver', () => {
         cy.get('.questionnaireBtn').should('be.visible');
     })
 
-    //questionnaire button should redirect to questionnaire page - X
+    //questionnaire button should redirect to questionnaire page - :)
     it('clicking on questionnaire button redirects to questionnaire page', () => {
         cy.get('.questionnaireBtn').click()
 
@@ -30,6 +30,7 @@ describe('what-to-do-in-denver', () => {
 })
 
 describe('what-to-do-in-denver-questionnaire', () => {
+    //404 error for this cy.visit. it does come up no github pages when just directly copy and paste this link, maybe need to visit the homepage first, then redirect to questionnaire for this to work
     beforeEach(() => {
         cy.visit('https://sclebron.github.io/questionnaire')
     })

@@ -1,6 +1,9 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  e2e: {
+    baseUrl: 'https://sclebron.github.io/what-to-do-in-denver/',
+  },
   component: {
     devServer: {
       framework: "create-react-app",

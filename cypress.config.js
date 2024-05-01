@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://sclebron.github.io/what-to-do-in-denver/',
+    baseUrl: 'https://sclebron.github.io',
   },
   component: {
     devServer: {

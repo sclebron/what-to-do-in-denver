@@ -70,6 +70,10 @@ describe('what-to-do-in-denver-all', () => {
     beforeEach(() => {
         cy.visit('https://sclebron.github.io/all')
     })
+
+    it('activities should display', () => {
+        cy.get('.allContainer').should('be.visible')
+    })
 })
 
 //all activities container should be visible

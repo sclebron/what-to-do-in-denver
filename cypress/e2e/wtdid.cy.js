@@ -76,6 +76,4 @@ describe('what-to-do-in-denver-all', () => {
     })
 })
 
-//all activities container should be visible
-
 //random activities container should be visible

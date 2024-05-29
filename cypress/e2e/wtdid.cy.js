@@ -30,12 +30,6 @@ describe('what-to-do-in-denver', () => {
 })
 
 describe('what-to-do-in-denver-questionnaire', () => {
-    //404 error for this cy.visit. it does come up no github pages when just directly copy and paste this link, maybe need to visit the homepage first, then redirect to questionnaire for this to work
-    // beforeEach(() => {
-    //     cy.visit('https://sclebron.github.io/questionnaire')
-    // })
-
-    //when try this it says the beforeEach fails but it still runs these tests. new error!!!
     beforeEach(() => {
         cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
         cy.get('.questionnaireBtn').click(); 

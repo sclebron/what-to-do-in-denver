@@ -38,7 +38,7 @@ describe('what-to-do-in-denver-questionnaire', () => {
     //when try this it says the beforeEach fails but it still runs these tests. new error!!!
     beforeEach(() => {
         cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
-        cy.get('questionnaireBtn').click(); 
+        cy.get('.questionnaireBtn').click(); 
     })
 
     //questionnaire should display on questionnaire page - X
@@ -58,14 +58,14 @@ describe('what-to-do-in-denver-questionnaire', () => {
 
     //all activities button should redirect to all page
     it('clicking on all activities button redirects to all page', () => {
-        cy.get('allBtn').click()
+        cy.get('.allBtn').click()
 
         cy.url().should('eq', 'https://sclebron.github.io/all')
     })
 
     //random activities button should redirect to random page
     it('clicking on random activity button redirects to random page', () => {
-        cy.get('randomBtn').click()
+        cy.get('.randomBtn').click()
 
         cy.url().should('eq', 'https://sclebron.github.io/random')
     })

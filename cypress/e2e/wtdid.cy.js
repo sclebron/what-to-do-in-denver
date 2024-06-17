@@ -66,6 +66,8 @@ describe('what-to-do-in-denver-questionnaire', () => {
 
 })
 
+
+//two of these, one for when a user doesn't select anything and then one with selections and probably will then make multiple with different selections
 describe('what-to-do-in-denver-all', () => {
     beforeEach(() => {
         cy.visit('https://sclebron.github.io/what-to-do-in-denver/');

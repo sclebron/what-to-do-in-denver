@@ -80,4 +80,15 @@ describe('what-to-do-in-denver-all', () => {
     })
 })
 
+describe('what-to-do-in-denver-all', () => {
+    beforeEach(() => {
+        cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
+        cy.get('.questionnaireBtn').click(); 
+        //find out how to select certain boxes from the questionnaire options
+        cy.get('')
+        cy.get('.allBtn').click(); 
+    })
+
+})
+
 //random activities container should be visible

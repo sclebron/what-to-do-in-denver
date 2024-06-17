@@ -68,7 +68,9 @@ describe('what-to-do-in-denver-questionnaire', () => {
 
 describe('what-to-do-in-denver-all', () => {
     beforeEach(() => {
-        cy.visit('https://sclebron.github.io/all')
+        cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
+        cy.get('.questionnaireBtn').click(); 
+        cy.get('.allBtn').click(); 
     })
 
     it('activities should display', () => {

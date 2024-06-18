@@ -85,8 +85,17 @@ describe('what-to-do-in-denver-all', () => {
         cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
         cy.get('.questionnaireBtn').click(); 
         //find out how to select certain boxes from the questionnaire options
-        cy.get('')
-        cy.get('.allBtn').click(); 
+    });
+
+    it('selects checkboxes from options', () => {
+        cy.get('.questionnaire').should('exist');
+
+        cy.get('.question').each(($question) => {
+            cy.wrap($question).find('.options').each($option) => {
+                cy.wrap($option).find('.selectbox').check();
+                
+            })
+        }
     })
 
 })

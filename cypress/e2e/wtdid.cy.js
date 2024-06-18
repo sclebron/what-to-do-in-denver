@@ -91,12 +91,12 @@ describe('what-to-do-in-denver-all', () => {
         cy.get('.questionnaire').should('exist');
 
         cy.get('.question').each(($question) => {
-            cy.wrap($question).find('.options').each($option) => {
+            cy.wrap($question).find('.options').each(($option) => {
                 cy.wrap($option).find('.selectbox').check();
-                
-            })
-        }
-    })
+                cy.wrap($option).find('.selectbox').should('be.checked');                
+            });
+        });
+    });
 
 })
 

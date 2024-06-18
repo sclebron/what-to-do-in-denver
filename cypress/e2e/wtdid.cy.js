@@ -98,6 +98,10 @@ describe('what-to-do-in-denver-all', () => {
         });
     });
 
+    it('navigates to all page', () => {
+        cy.get('.allBtn').click();
+    });
+
 })
 
 //random activities container should be visible

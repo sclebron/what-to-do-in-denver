@@ -75,8 +75,8 @@ describe('what-to-do-in-denver-all', () => {
         cy.get('.allBtn').click(); 
     })
 
-    it('activities should display', () => {
-        cy.get('.allContainer').should('be.visible')
+    it('no-activities should display', () => {
+        cy.get('.no-activities').should('be.visible');
     })
 })
 

@@ -102,6 +102,11 @@ describe('what-to-do-in-denver-all', () => {
         cy.get('.allBtn').click();
     });
 
+    it('activities should display', () => {
+        //failing - can't find allContainer
+        cy.get('.allContainer').should('be.visible');
+    })
+
 })
 
 //random activities container should be visible

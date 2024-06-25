@@ -103,7 +103,7 @@ describe('what-to-do-in-denver-all', () => {
     });
 
     it('activities should display', () => {
-        //failing - can't find allContainer
+        //failing - can't find allContainer - above we are selecting all checkboxes and it is likely that no activities match the criteria for all boxes being selected, so the allContainer can't be found because no activities are being shown
         cy.get('.allContainer').should('be.visible');
     })
 

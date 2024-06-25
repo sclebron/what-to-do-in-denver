@@ -84,9 +84,9 @@ describe('what-to-do-in-denver-all', () => {
     beforeEach(() => {
         cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
         cy.get('.questionnaireBtn').click(); 
-        //find out how to select certain boxes from the questionnaire options
     });
 
+    //this selects all options which will result in no matching activities
     it('selects checkboxes from options', () => {
         cy.get('.questionnaire').should('exist');
 
@@ -102,11 +102,40 @@ describe('what-to-do-in-denver-all', () => {
         cy.get('.allBtn').click();
     });
 
+    it('no-activities should display', () => {
+        cy.get('.no-activities').should('be.visible');
+    })
+
+})
+
+describe('what-to-do-in-denver-all', () => {
+    beforeEach(() => {
+        cy.visit('https://sclebron.github.io/what-to-do-in-denver/');
+        cy.get('.questionnaireBtn').click(); 
+    });
+
+    //should only select specific checkboxes - hasn't been tested yet
+    it('selects specific checkboxes from options', () => {
+        const indicesToSelect = [0, 2, 4]; // Select checkboxes at indices 0, 2, and 4
+    
+        cy.get('.questionnaire').should('exist');
+    
+        cy.get('.question').each(($question) => {
+            cy.wrap($question).find('.options').each(($option, index) => {
+                // Select options based on predefined indices
+                if (indicesToSelect.includes(index)) {
+                    cy.wrap($option).find('.selectbox').check();
+                    cy.wrap($option).find('.selectbox').should('be.checked');
+                }
+            });
+        });
+    });
+
     it('activities should display', () => {
         //failing - can't find allContainer - above we are selecting all checkboxes and it is likely that no activities match the criteria for all boxes being selected, so the allContainer can't be found because no activities are being shown
         cy.get('.allContainer').should('be.visible');
     })
-
 })
+
 
 //random activities container should be visible

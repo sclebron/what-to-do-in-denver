@@ -102,6 +102,7 @@ describe('what-to-do-in-denver-all', () => {
         cy.get('.allBtn').click();
     });
 
+    //failing - couldn't find .no-activities
     it('no-activities should display', () => {
         cy.get('.no-activities').should('be.visible');
     })

@@ -960,6 +960,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 49,
+            "title": "Hike Panorama Point",
+            "image": "https://www.alltrails.com/_next/image?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvMjg4OTQxMjcvZjkzNDA1MDNlOTcwZWQ3ZmI2MzQ2MWZkNjc4OGVmYmQuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDIyLCJoZWlnaHQiOjMxMiwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0%3D&w=3840&q=90",
+            "description": "A great 2 hour hike just outside of Denver!",
+            "webUrl": "https://www.alltrails.com/trail/us/colorado/panorama-point-to-bear-creek-trail-loop",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

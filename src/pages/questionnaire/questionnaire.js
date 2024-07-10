@@ -941,6 +941,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 48,
+            "title": "Visit Crested Butte",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/51/ea/4e/kebler-pass.jpg?w=500&h=400&s=1",
+            "description": "Take an overnight or weekend trip to Crested Butte.",
+            "webUrl": "https://www.skicb.com/",
+            "halfDay": false,
+            "fullDay": false,
+            "overnight": true,
+            "inCity": false,
+            "oneHr": false,
+            "fewHours": true,
+            "indoors": false,
+            "outdoors": true,
+            "winter": true,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

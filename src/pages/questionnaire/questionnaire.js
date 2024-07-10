@@ -922,6 +922,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 47,
+            "title": "Go to Dillon Reservoir",
+            "image": "https://adventurepaddletours.com/wp-content/uploads/2023/01/Dillon-Reservoir-2.jpg",
+            "description": "Visit Dillon Reservoir to kayak, paddleboard, hike, go for a picnic, etc!",
+            "webUrl": "https://www.denverwater.org/recreation/dillon-resevoir",
+            "halfDay": false,
+            "fullDay": true,
+            "overnight": false,
+            "inCity": false,
+            "oneHr": true,
+            "fewHours": false,
+            "indoors": false,
+            "outdoors": true,
+            "winter": false,
+            "spring": true,
+            "summer": true,
+            "fall": true,
+        },
     ];
 
     const questions = [

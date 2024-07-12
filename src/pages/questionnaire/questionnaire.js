@@ -979,6 +979,25 @@ function Questionnaire() {
             "summer": true,
             "fall": true,
         },
+        {
+            id: 50,
+            "title": "Get Ice Cream at Bonnie Brae",
+            "image": "https://live.staticflickr.com/6179/6245164996_b480b184b1_b.jpg",
+            "description": "Make a nighttime stop to Bonnie Brae for ice cream or a milkshake!",
+            "webUrl": "https://bonniebraeicecream.com/",
+            "halfDay": true,
+            "fullDay": false,
+            "overnight": false,
+            "inCity": true,
+            "oneHr": false,
+            "fewHours": false,
+            "indoors": true,
+            "outdoors": true,
+            "winter": false,
+            "spring": false,
+            "summer": true,
+            "fall": false,
+        },
     ];
 
     const questions = [
